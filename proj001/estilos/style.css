@@ -409,6 +409,15 @@ hr {
     
 }
 
+footer {
+    background-color: var(--fundo-escuro);
+    color: var(--branco);
+    font-size: 1.4em;
+    text-align: center;
+    border-top: 1px solid red;
+    padding: 15px;
+}
+
 
 
 
