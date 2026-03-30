@@ -31,7 +31,7 @@ header {
     grid-template-columns: auto 90vw auto;
     background-color: var(--fundo-escuro);
     color: white;
-    padding: 30px 0px;
+    padding: 20px 0px;
     border-bottom: 1px solid red;
 
     position: sticky;
@@ -117,7 +117,6 @@ main {
     grid-template-columns: 1fr 90vw 1fr;
     background-color: var(--principal);
     
-    
 
 }
 
@@ -137,10 +136,9 @@ article.cards {
 }
 
 .imagem  {
-    width: 100%;
+   
     aspect-ratio: 1 / 1 ;
     object-fit: cover;
-    margin: auto;
     border-radius: 8px;
     border-bottom: 5px solid var(--principal);
     border-top: 5px solid var(--principal);
@@ -246,11 +244,16 @@ section#titulo2  {
     position: relative;
     overflow: hidden;
     grid-column: 2 / 3;
-    width: 100%;
+   
     gap: 30px;
-    padding: 10px;
+    padding: 0px;
     background-color: white;
     transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
     
 
 }
@@ -258,31 +261,43 @@ section#titulo2  {
 section#plan {  
     grid-column: 2 / 3;
     position: relative;
-    overflow: hidden;
+    
     max-width: 400px;
     display: block;
     transition: 0.3s;
-    margin: auto;
+    gap: 10px;
+    margin: 10px 0px;
     
     
 }
 
 .container img {
     display: block;
-    width: 100%;
-    aspect-ratio: 1 / 1;
+  
+    aspect-ratio: 3 / 1;
     object-fit: cover;
-    border: 5px solid rgb(255, 89, 0);
+    border-left: 5px solid var(--principal);
+    border-right: 5px solid var(--principal);
+    border-top: 2px solid var(--principal);
+    border-bottom: 2px solid var(--principal);
     transition: 0.3s;
+   max-width: 400px;
+   max-height:150px;
+
    
+
    
     border-radius: 8px;
     grid-column: 2 / 3;
-    margin: 20px 0px;
+    
 }
+
+
 
 section#plan:hover {
     filter: brightness(70%);
+    transform: translate(-2% , -2%);
+    transition: 0.4s;
     cursor: pointer;
 }
 
@@ -324,6 +339,76 @@ div.text p {
 
 }
 
+/* Contato e Horario */
+
+section#contato {
+    grid-column: 2 / 3;
+    font-size: 1.2em;
+    text-align: center;
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    gap: 50px;
+    text-shadow: 0px 0px 0px rgb(0, 0, 0);
+    color: var(--principal);
+    font-weight: bolder;
+    background-color: var(--fundo-escuro);
+
+}
+
+div#n1 {
+    grid-row: 1 / 2;
+    
+}
+
+div#n2 {
+    grid-row: 2 / 3;
+    margin-top: 20px;
+  
+}
+
+div.number h2 {
+    margin-bottom: 20px;
+}
+
+
+ div.number p {
+    color: white;
+    margin-bottom: 20px;
+   
+}
+
+
+
+i#zap {
+    font-size: 1.4em;
+    color: green;
+    position: relative;
+    top: 2px;
+}
+
+span.azul {
+    color: var(--principal);
+}
+
+span.white {
+    color: white;
+}
+
+
+div.number p {
+    text-align: center;
+   
+
+}
+
+hr {
+    border: 2px solid var(--principal) ;
+    border-radius:40px;
+    
+    
+}
+
 
 
 
@@ -339,30 +424,32 @@ div.text p {
 
 @media screen and (min-width:768px) {
 
-    .container {
+    article.container {
         display: flex;
-        flex-flow: row nowrap;
+        flex-flow: row wrap;
     }
-
-    section.plan {
-        
-    }
-
+    
     article.cards {  
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     gap: 30px;
     padding: 10px;
 
-
-   
 }
 
-section#cards-text {
-    flex: 1;
-    min-height: 350px;
+section.cards-text {
+    flex: 1 0 200px;
+    margin: 30px 0px;
 }
+
+section.cards-text p {
+    width: 100%;
+    font-size: 1.2em;
+    line-height: 1.7em;
+}
+
+
+
 
 header h1 {
     font-size: 5em;
@@ -370,8 +457,9 @@ header h1 {
 }
 
 img.imagem {
-    min-width: 200px;
-    max-width: 600px;
+    min-width:200px;
+   
+   
     
 }
 
@@ -433,9 +521,75 @@ div.texto2 p {
 
 section#plan {
     max-width: none;
+    margin: 40px 10px;
+   
+
+
+}
+
+.container {
+    flex-flow: row nowrap;
+    gap: 0px;
+    display: flex;
+    justify-content: space-around;
+
 }
 
 
+
+
+/* contato e horário    */
+
+section#contato {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.4em;
+    transition: .4s;
+}
+
+div.number p {
+    text-align: center;
+   
+
+}
+
+div#n2 h2 {
+    margin-top: -20px;
+}
+
+
+
+div#n1 {
+    grid-column: 1 / 3 ;
+     transition: .4s;
+   
+}
+
+
+
+div#n2 {
+    grid-area: 1 / 4 / 2 / 6;
+     transition: .4s;
+}
+
+i#zap {
+    font-size: 1.84em;
+    color: green;
+    position: relative;
+    top: 5px;
+    transition: .4s;
+}
+
+
+/* main mar */
+
+main {
+    background-image: url(../imagens/pexels-eelisabeth_-2155543577-33801961.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    
+}
 
 
 
