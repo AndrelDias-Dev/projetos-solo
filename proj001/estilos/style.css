@@ -420,8 +420,6 @@ hr {
 
 
 
-
-
 @media screen and (min-width:768px) {
 
     article.container {
@@ -471,13 +469,20 @@ article.principal {
 }
 
 section#hero img {
-    width: 125%;
-    flex: 1 0 400px;
+    width: 100%;
     position: relative;
     top: 30px;
-    left: -30px;
-    transition: 0.4s
+    left: 0px;
+    transition: 0.4s;
+  
+    aspect-ratio: 1 / 1;
+    object-fit: cover;  
 }
+
+section#hero {
+    transition: 0.4s;
+}
+
 
 section#texto1 {
     padding-left: 100px;
@@ -588,6 +593,7 @@ main {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
+   
     
 }
 
