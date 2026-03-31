@@ -1,0 +1,297 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+    transition: 0.4s;
+
+
+}
+
+@font-face {
+    font-family: 'bigas';
+    src: url(../fontes/SaintCarell_PERSONAL_USE_ONLY.otf);
+}
+
+:root {
+    --principal: black;
+    --secundario: #7f7f7f;
+    --texto: white;
+}
+
+/* HEADER */
+
+header {
+    background-color: var(--principal);
+    color: var(--secundario);
+    padding: 0px 20px;
+    
+    
+}
+
+header div#cabeçalho {
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1  {
+    font-family: 'bigas';
+    font-size: 2.8em;
+}
+
+header ul {
+    display: flex;
+    list-style-type: none;
+}
+
+header img {
+    filter: contrast(0%);
+    width: 100px;
+    padding: 10px;
+    color: white;
+}
+
+
+
+/* MENU */
+
+nav {
+    background-color: var(--principal);
+
+}
+
+nav ul {
+    display: flex;
+    padding: 10px 0px;
+
+    justify-content: space-evenly;
+}
+
+nav ul li {
+    padding: 5px;
+}
+
+nav ul a {
+    color: var(--secundario);
+    text-decoration: none;
+    border-left: 2px solid var(--secundario);
+    padding: 10px;
+}
+
+nav ul a:hover {
+    background-color: var(--secundario);
+    color: black;
+}
+
+/* HERO */
+
+section#hero-container {
+    background-image: url(../imagens/hero.jpg);
+    background-position: 40% 30%;
+    
+    background-size: cover;
+
+    background-repeat: no-repeat;
+
+    
+    
+    
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    width: 100%;
+    height: 50vh;   
+}
+
+div#hero-titulo {
+    color: var(--texto);
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.479);
+    border-radius:0px 8px 0px 0px;
+    font-size: 1.3em;
+    min-width: 300px;
+    max-width: 500px;
+
+}
+
+div#hero-titulo h2 {
+    font-family: 'bigas';
+    font-size: clamp(1.8em, 3vw, 4em);
+    color: var(--secundario);
+    text-shadow: 1px 1px 0px rgb(0, 0, 0);
+}
+
+div#hero-titulo p {
+    font-size: clamp(0.9em, 2vw, 3em);
+}
+
+
+
+div#hero-botao {
+
+    border-radius:0px 8px 0px 8px;
+    font-weight: bolder;
+    font-size: 1em;
+    text-align: center;
+     margin-right: 5px;
+   
+  
+
+    display: flex;
+    align-self: flex-start;
+
+    
+    
+}
+
+
+div#hero-botao a {
+    color: var(--principal);
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.1em;
+
+
+
+
+}
+
+div.buton {
+    background-color: #ffd900;
+    border-radius: 0px 0px 10px 10px;
+    padding: 3px;
+   
+
+
+   
+}
+
+select#hora {
+    outline: none;
+    font-size: 1em;
+   border: 0px;
+   background-color: #ffd900;
+    color: var(--principal);
+     font-weight: bold;
+     width: 150px;
+
+
+}
+
+
+
+option {
+    background-color: #ffdd00;
+    color: var(--principal);
+    font-weight: bold;
+    text-align: center;
+
+}
+
+
+
+
+
+section#serv-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 0, 0);
+    color: var(--texto);
+    font-size: 1.5em;
+    font-weight: bolder;
+    text-shadow: 2px 2px 2px black;
+}
+
+
+
+article.servs1 {
+    background: url(../imagens/hair.jpg) center center no-repeat;
+    background-size: cover;
+    filter: grayscale(100);
+    
+    position: relative;
+
+    width: 90vw;
+    max-width: 400px;
+    height:  500px;
+    margin: 10px 0px;
+    z-index: 1;
+
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+article.servs2 {
+    background: url(../imagens/beard.jpg) center center no-repeat;
+    background-size: cover;
+    width: 90vw;
+    max-width: 400px;
+    height:  500px;
+    margin: 10px 0px;
+   
+   
+    
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+
+article.servs3 {
+    background: url(../imagens/combo.jpg) bottom center no-repeat;
+    background-size: cover;
+    width: 90vw;
+    max-width: 400px;
+    height: 500px;
+    margin: 10px 0px;
+    
+
+    
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    
+} 
+
+div.serv-titulo {
+    font-size: 1.4em;
+    
+}
+
+div.serv-preco {
+    font-size: 2em;
+}
+
+div.serv-descricao {
+    font-size: 1.4em;
+    text-align: center;
+}
+
+    
+
+
+ 
+
+
+
+
