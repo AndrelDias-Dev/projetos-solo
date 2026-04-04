@@ -215,7 +215,7 @@ section#serv-container {
     color: var(--texto);
     font-size:clamp(1.5em, 1.6em, 1.7em  );
     font-weight: bolder;
-    text-shadow: 2px 2px 2px black;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
     gap: 14px;
     margin-top: 20px;
    text-align: center;
@@ -234,10 +234,12 @@ article.servs1 {
     background-size: cover;
     grid-column: 2;
     aspect-ratio: 1 / 1;
-  border: 3px solid black;
+  
     border-radius: 14px;
     cursor: pointer;
-    
+    border: 5px solid rgb(0, 0, 0);
+    border-bottom: 10px solid var(--secundario);
+    border-top: 10px solid var(--secundario);
     
   
     
@@ -258,10 +260,12 @@ article.servs2 {
     background-size: cover;
     grid-column: 2;
     aspect-ratio: 1 / 1;
-    border: 3px solid black;
+  
     border-radius: 14px;
     cursor: pointer;
-    
+    border: 5px solid rgb(0, 0, 0);
+    border-bottom: 10px solid var(--secundario);
+    border-top: 10px solid var(--secundario);
   
   
    
@@ -287,7 +291,9 @@ article.servs3 {
     background-size: cover;
     grid-column: 2;
     aspect-ratio: 1 / 1;
-    border: 3px solid black;
+    border: 5px solid rgb(0, 0, 0);
+    border-bottom: 10px solid var(--secundario);
+    border-top: 10px solid var(--secundario);
     border-radius: 14px;
     cursor: pointer;
   
