@@ -1,0 +1,419 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+/*rgb(170, 255, 0)*/
+
+body {
+    background-color: rgb(46, 46, 46);
+    color: white;
+    font-family: "Roboto";
+    line-height: 2.4em;
+    
+}
+
+.estrutura {
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "header"
+    "main"
+    "sobre"
+    "aside"
+    "section1"
+    "section2"
+    "footer"
+    ;
+}
+
+
+
+/* HEADER */
+.header {
+    grid-area: header;
+    display: flex;
+    padding: 10px;
+    background-color: black;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header ul {
+    text-align: center;
+    list-style-type: none;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    width: 100%;
+    display: none;
+    
+    
+}
+
+.header li {
+    padding: 10px;
+}
+
+.header li + li {
+    border-top: 2px solid rgb(170, 255, 0);
+}
+
+.header h1 {
+   margin-bottom: 20px;
+   font-size: clamp(2em, 4vw, 3em);
+   
+    
+}
+
+.header p {
+       font-size: clamp(1.4em, 2vw, 2em);
+       text-align: left;
+}
+
+.header .logo {
+    padding: 10px;
+}
+
+
+.header img {
+    background-color: white;
+    width: 40px;
+    display: block;
+    filter: invert(1); 
+}
+
+div.menu {
+    padding: 10px;
+}
+
+div.menu:hover {
+    cursor: pointer;
+}
+
+/* MAIN */
+
+.main {
+    grid-area: main;
+}
+
+.main div.hero {
+    background-image: url(../imagens/hero-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 40vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    
+}
+
+.main div.hero h1 {
+    text-shadow: 2px 2px 2px black;
+    text-align: center;
+    margin-bottom: 40px;
+
+   
+}
+
+
+.main div.sob {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+     width: 100%;
+    
+}
+
+.main div.sob h1 {
+    font-size: clamp(2em, 4vw, 4em);
+    
+    
+}
+
+
+
+.main div.hero button {
+    border-radius: 30px;
+    border: 0px;
+    padding: 20px;
+    font-size: 1.2em;
+    transition: 0.3s;
+    animation-timing-function: ease-out;
+    text-align: center;
+    max-width: 400px;
+    margin: auto;
+   
+}
+
+.main div.hero button:hover {
+    box-shadow: 2px 2px 5px rgb(170, 255, 0);
+    cursor: pointer;
+}
+
+.main p, h1 {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+/* SOBRE */
+
+.sobre {
+    grid-area: sobre;
+    margin: 30px 0px;
+}
+
+.sobre img {
+    width: 100%;
+    max-width: 800px;
+    display: block;
+    margin: auto;
+    height: 50vh;
+    object-fit: cover;
+    
+}
+
+.sobre h1 {
+    text-align: center;
+    color: rgb(170, 255, 0);
+    font-size: clamp(1.4em, 3vw, 2em);
+    margin: 20px 0px;
+
+}
+
+.sobre p {
+    text-align: justify;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: clamp(1.4em, 3vw, 1.7em);
+   
+}
+
+.sobre div {
+    margin: 20px 0px;
+}
+
+/* ASIDE */
+
+.aside {
+    grid-area: aside;
+    text-align: center;
+    margin: 20px 0px;
+    
+}
+
+.aside ul {
+    background-color: rgb(57, 57, 57);
+    color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 10px rgb(170, 255, 0);
+    border-radius: 20px;
+    width: 80vw;
+    max-width: 600px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    margin: auto;
+   
+}
+
+.aside li {  
+    padding: 20px;
+    font-size: 1.4em;
+    text-shadow: 1px 1px 1px black;
+    text-align: left;
+}
+
+
+.aside li:hover {
+    background-color: rgb(41, 41, 41);
+    cursor: pointer;
+}
+
+.aside li + li {
+    border-top: 3px solid rgb(170, 255, 0);
+}
+
+.aside h1 {
+    color: rgb(170, 255, 0);
+    margin-bottom: 10px;
+}
+
+.aside h1#cbc {
+    font-size: clamp(2em, 4vw, 3em);
+    margin-bottom: 40px;
+}
+
+.aside p {
+    margin: 10px 0px;
+}
+
+/* SECTION 1 */
+
+.section1 {
+    grid-area: section1;
+    text-align: center;
+    margin: 50px 0px;
+}
+
+.section1 div#scroll {
+    display: flex;
+    overflow-x: auto;
+    background-color: rgb(71, 71, 71);
+    padding: 20px 0px;
+    
+    
+}
+
+.section1 div#scroll::-webkit-scrollbar {
+    width: 0px;
+}
+
+.section1 div.depo {
+    flex: 0 0 auto;
+    scroll-snap-type: x mandatory;
+}
+
+.section1 div.depo p {
+    font-size: clamp(1em, 2vw, 1.4em);
+    padding: 20px;
+    
+}
+
+.section1 img {
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    object-fit: cover;
+    width: 150px; 
+    border: 2px solid rgb(170, 255, 0); 
+}
+
+/* SECTION 2 */
+
+.section2 {
+    grid-area: section2;
+    margin: auto;
+    padding: 10px;
+    box-shadow: 1px 1px 5px  rgb(170, 255, 0);
+    border-radius: 10px;
+    width: 80vw;
+
+}
+
+.section2 p {
+    padding: 10px;
+    font-size: clamp(1em, 2vw, 1.4em);
+    text-align: center;
+}
+
+.section2 h1#h2 {
+text-align: center;
+}
+
+.section2 input {
+    width:calc(100% - 11vw);
+    height: 30px;
+    font-size: 1.2em;
+    text-indent: 5px;
+}
+
+
+/* FOOTER */
+
+.footer {
+    grid-area: footer;
+    margin: 40px 0px 0px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    background-color: black;
+    padding: 10px;
+}
+
+.footer a {
+    text-align: center;
+}
+
+.footer p {
+    font-size: clamp(1em, 2vw, 1.4em);
+}
+
+
+
+.footer h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(170, 255, 0)
+}
+
+.footer img {
+    width: 15%;
+    max-width: 50px;
+    margin: 10px 10px 0px 0px;
+   
+}
+
+.footer div#links {
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+
+    .estrutura {
+        display: grid;
+        grid-template-columns: 300px 4fr;
+         grid-template-areas: 
+    "header header"
+    "main main"
+    "aside aside"
+    "sobre sobre"
+    "section1 section1"
+    "section2 section2"
+    "footer footer "
+    ;
+
+    }
+
+    .header {
+        grid-column: 1 / -1;
+    }
+
+    .main {
+        grid-column: 1 / -1;
+        
+    }
+
+    .main div.hero {
+        height: 70vh;
+        
+    }
+
+    .main p {
+       
+    }
+
+    .aside {
+        grid-column: 1 / -1;
+    }
+
+    .section1 {
+      grid-column: 1 / -1;
+    }
+
+    .section2 {
+        
+    }
+
+    .footer {
+        grid-column: 1 / -1;
+    }
+
+   
+
+
+}
