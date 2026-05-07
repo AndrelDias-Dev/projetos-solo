@@ -3,9 +3,13 @@
 :root {
     --cor1: #754D3B;
     --cor2: #4B3A32;
-    --cor3: #332D2B;
+    --cor3: rgb(51, 45, 43);
     --cor4: white;
     --cor5: #CA5722;
+ }
+
+ html {
+    scroll-behavior: smooth;
  }
 
  @font-face {
@@ -63,7 +67,8 @@ body {
     z-index: 999;
     position: sticky;
     top: 0;
-    background-color: var(--cor2);
+    background: rgb(51, 45, 43, 0.50);
+    backdrop-filter: blur(10px);
 }
 
 .header h1 {
