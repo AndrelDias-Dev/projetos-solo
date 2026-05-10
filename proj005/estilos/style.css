@@ -75,24 +75,76 @@ body {
 }
 
 #btn-login {
-    border-radius: 5px;
+    border-radius: 10px;
     border: none;
     padding: 5px 10px;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: bolder;
+    display: block;
+    width: 20rem;
+    margin: auto;
+    margin-top: 20px;
+    border: 2px solid var(--cor2);
+    color: var(--cor4);
+    cursor: pointer;
+    background-color: var(--cor3);
 }
 
-svg {
+#btn-login:hover {
+    background-color: var(--cor4);
+    border: 2px solid var(--cor3);
+    color: var(--cor3);
+}
+
+svg#icon {
     width: 40px;
+    height: auto;
 }
 
 #btn-mobile {
     background: none;
     border: 0px;
     color: white;
-   
-
+    cursor: pointer;
 }
+
+#menu {
+    flex-direction: column;
+    position: fixed;
+    background-color: var(--cor1);
+    display: flex;
+
+    width: 100%;
+    height: 100vh;
+    top: 100%;
+    left: 0;
+    
+    transform: translateX(-100%);
+    opacity:0;
+    transition: 0.3s ease;
+}
+
+#menu.active {
+    transform: translateX(0);
+    opacity: 1;
+    
+}
+
+.menu-link {
+    text-decoration: none;
+    color: var(--cor4);
+    padding: 10px 5px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    border-bottom: 3px solid white;
+}
+
+.menu-link:hover {
+    background-color: var(--cor2);
+}
+
+
+
 
 
 
