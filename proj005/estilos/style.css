@@ -93,6 +93,7 @@ body {
     height: 100vh;
     top: 100%;
     left: 0;
+    overflow-y: auto;
     transform: translateX(-100%);
     pointer-events: none;
     background: var(--cor1);
@@ -125,7 +126,7 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 400px; 
+    margin-top: 10px; 
 }
 
 .btn-login {
@@ -495,6 +496,39 @@ div.stars {
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
+    }
+
+    #btn-mobile {
+        display: none;
+    }
+    
+
+    #menu {
+        transform: none;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: static;
+        background: none;
+        gap: 20px;
+        pointer-events: auto;
+        width: auto;
+        height: auto;
+        opacity: 1;
+    }
+
+     #menu a {
+        border: none;
+        border-radius: 5px;
+        
+     }
+
+     #menu a:hover {
+        background-color:  var(--cor2);
+     }
+
+    #user {
+        margin-top: 0;
     }
 
 
