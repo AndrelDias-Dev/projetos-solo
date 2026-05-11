@@ -58,9 +58,10 @@ body {
 /* HEADER */
 
 .header {
-    grid-area: header; 
+    grid-area: header;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
+    align-items: center;
     flex-wrap: wrap;
     padding: 30px 20px;
     font-family: 'cream';
@@ -73,76 +74,79 @@ body {
 
 .logo {
     color: white;
+    flex: 1 390px;
 }
 
-#btn-login {
-    border-radius: 10px;
-    border: none;
-    padding: 5px 10px;
-    font-size: 1.2rem;
-    font-weight: bolder;
-    display: block;
-    width: 20rem;
-    margin: auto;
-    margin-top: 20px;
-    border: 2px solid var(--cor4);
-    color: var(--cor4);
-    cursor: pointer;
-    background-color: var(--cor5);
-}
-
-#btn-login:hover {
-    background-color: var(--cor4);
-    border: 2px solid var(--cor3);
-    color: var(--cor3);
-}
-
-svg#icon {
-    width: 40px;
-    height: auto;
-}
 
 #btn-mobile {
-    background: none;
-    border: 0px;
+    width: 40px;
     color: white;
-    cursor: pointer;
+    border: 0px;
+    background: transparent;
 }
 
 #menu {
-    flex-direction: column;
-    position: fixed;
-    background-color: var(--cor1);
     display: flex;
-
+    flex-direction: column;
+    position: absolute;
     width: 100%;
     height: 100vh;
     top: 100%;
     left: 0;
-    
     transform: translateX(-100%);
-    opacity:0;
+    pointer-events: none;
+    background: var(--cor1);
+    opacity: 0;
     transition: 0.3s ease;
 }
 
 #menu.active {
-    transform: translateX(0);
     opacity: 1;
-    
+    pointer-events: auto; 
+    transform: translateX(0);
+    transition: 0.3s ease;
 }
 
-.menu-link {
+#menu-link {
     text-decoration: none;
-    color: var(--cor4);
-    padding: 10px 5px;
-    font-size: 1.4rem;
+    color: white;
+    padding: 20px 5px;
+    border-bottom: 2px solid white;
     font-weight: bold;
-    border-bottom: 3px solid white;
+    font-size: 1.3rem;
 }
 
-.menu-link:hover {
+#menu-link:hover {
     background-color: var(--cor2);
 }
+
+#user {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 400px; 
+}
+
+.btn-login {
+    padding: 10px;
+    font-size: 1.4rem;
+    border-radius: 5px;
+    border: 0;
+    font-weight: bolder;
+    color: white;
+    background-color: var(--cor3);
+    box-shadow: 2px 2px 10px black;
+    cursor: pointer;
+    margin: 20px;
+}
+
+.btn-login:hover {
+    transform: scale(110%);
+    background-color: var(--cor5);
+}
+
+
 
 
 
@@ -493,53 +497,7 @@ div.stars {
         align-items: flex-start;
     }
 
-    .logo {
-        flex: 400px;
-    }
-    .header {
-        padding: 10px 30px;
-        display: flex;
-        align-items: center;
-    }
 
-
-    #btn-mobile {
-        display: none;
-    }
-
-    #btn-login {
-        width: auto;
-        height: auto;
-        padding: auto;
-        position: relative;
-        top: -10px;
-        padding: 10px 5px;
-
-    }
-
-    #menu {
-        display: flex;
-        position: static;
-        width: auto;
-        height: auto;
-        background: transparent;
-        align-items: center;
-        gap: 20px;
-        
-
-        flex-direction: row;
-        transform: none;
-        opacity: 1;
-    }
-
-    #menu a {
-        border-radius: 5px;
-    }
-
-    .menu-link {
-        border: none;
-    }
-    
 
  
 
