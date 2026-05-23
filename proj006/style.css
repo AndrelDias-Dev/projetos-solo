@@ -23,7 +23,7 @@
 }
 
 body {
-    width: 100%;
+    width: 100vw;
     height: 500vh;
     position: relative;
     background-color: var(--secundario);
@@ -165,8 +165,8 @@ header a {
     backdrop-filter:blur(10px);
     border-radius: 1rem 0px 0px 1rem;
     z-index:999;
-    height: auto;
-
+    height: 220px;
+    margin-top: 42px;
    
     
 }
@@ -211,51 +211,56 @@ header a {
 /* SOBRE NÓS */
 
 #sobre-container {
-    position: relative;
+    width: 90vw;
+    height: auto;
     display: block;
-    width: 100%;
-    max-width: 1200px;
     margin: auto;
-    margin-top: 100px;
-    background:transparent;
-    padding: 10px;
+    margin-top: 50px;
+    border-radius: 10px;
+   
 }
 
 .sobre-content {
     display: flex;
     flex-direction: column;
-    font-size: 1.3rem;
-}
-
-.sobre-tittle, .sobre-img  {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    position:relative
 }
 
- .sobre-tittle  h3, p  {
-    color: black;
-    padding: 10px;
-}
-
-
-.sobre-tittle div {
-    background-color: var(--principal);
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.sobre-img img  {
-    width: 100%;
-    height:70vh;
+.sobre-img img {
+    max-width: 600px;
+    width: 85vw;
+    border-radius: 10px;
+    
     object-fit: cover;
-    object-position: top;
-    aspect-ratio: 1 / 2;
-    border-radius: 0px 0px 10px 10px;
-    border: 2px solid var(--principal);
+    object-position: 0px -20px;
+    overflow: hidden;
+    aspect-ratio: 1 / 1;
+}
+
+
+
+.sobre-tittle {
+    width: 100%;
+    padding: 50px;
+    display:block;
+    text-align: left;
+    position: relative;
+    text-align: left;
+}
+
+.sobre-tittle h2 {
+    font-size: 2.5rem;
+}
+
+.sobre-description {
+    background-color: var(--opt-green);
+    font-size: 1.5rem;
+    padding: 10px;
+    max-width: 600px;
+    display: block;
+    margin:auto
 }
 
 
