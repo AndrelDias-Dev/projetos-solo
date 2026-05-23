@@ -215,7 +215,7 @@ header a {
     height: auto;
     display: block;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 180px;
     border-radius: 10px;
    
 }
@@ -226,15 +226,17 @@ header a {
     justify-content: center;
     align-items: center;
     position:relative
+    max
 }
 
 .sobre-img img {
     max-width: 600px;
-    width: 85vw;
-    border-radius: 10px;
+    width: 80vw;
+    border-radius: 0px 0px 10px 10px;
+    border: 2px solid yellow;
     
     object-fit: cover;
-    object-position: 0px -20px;
+    object-position: 0px -28px;
     overflow: hidden;
     aspect-ratio: 1 / 1;
 }
@@ -242,25 +244,34 @@ header a {
 
 
 .sobre-tittle {
-    width: 100%;
-    padding: 50px;
+    max-width: 600px;
+    width: 90%;
     display:block;
     text-align: left;
     position: relative;
     text-align: left;
+    
 }
 
 .sobre-tittle h2 {
     font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: left;
 }
 
 .sobre-description {
     background-color: var(--opt-green);
     font-size: 1.5rem;
-    padding: 10px;
-    max-width: 600px;
+    padding: 20px;
+    width: 100%;
     display: block;
-    margin:auto
+    margin:auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    box-shadow: 0px 3px 3px black ;
 }
 
 
