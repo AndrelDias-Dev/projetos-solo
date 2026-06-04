@@ -80,11 +80,15 @@ header a:hover {
         display: flex;
         flex-direction: row;
         position: relative;
+        transform: none;
         background: none;
         width: auto;
         height: auto;
+        opacity: 1;
+        pointer-events: auto;
     
     }
+
 
     header a {
         border-radius: 8px;
