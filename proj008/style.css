@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+:root {
+    --cor-principal: #01152E;
+    --cor-secondaria:#11AEB0;
+    --cor-padrao:white;
+
+    --font-principal: "Inter";
+}
+
+header {
+    background-color: var(--cor-principal);
+    color: white;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header .menu, .btn-contato {
+    display: none;
+}
+
+.logo img {
+    transform: scaleX(-1);
+}
+
+.hero-img {
+    background: linear-gradient(rgba(0, 0, 0, 0.4)),url(imagens/hero.jpg);
+    background-size: cover;
+    background-position: center left;
+    width: 100%;
+    height: clamp(60vh, 3vw, 100vh); 
+}
+
+.hero-content {
+    
+}
+
+
