@@ -2,7 +2,13 @@ const btnLeft = document.querySelector('.btn-left')
 const btnRight = document.querySelector('.btn-right')
 const slides = document.querySelectorAll('.slide-item')
 const bullets = document.querySelectorAll('.bullets li')
+const btnMenu = document.querySelector('i')
+const menu = document.querySelector('ul')
+const menuLink = document.querySelectorAll('.menu-link')
 let index = 0
+
+
+//SLIDE INICIO//
 
 function changeSlide() {
     const slideActive = document.querySelector('.slide-item.active')
@@ -48,4 +54,19 @@ bullets.forEach((bullet, bulletIndex) => {
     })
 })
 
+//SLIDE FIM//
+
+
+//BOTAO MENU INICIO//
+
+btnMenu.addEventListener('click', () => {
+    menu.classList.toggle('active')
+})
+
+menuLink.forEach(link => link.addEventListener('click', () => {
+    menu.classList.remove('active')
+}))
+
+
+//BOTAO MENU FIM//
 
