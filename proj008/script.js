@@ -5,6 +5,7 @@ const bullets = document.querySelectorAll('.bullets li')
 const btnMenu = document.querySelector('i')
 const menu = document.querySelector('ul')
 const menuLink = document.querySelectorAll('.menu-link')
+const slider = document.querySelector('.products-container')
 let index = 0
 
 
@@ -19,8 +20,43 @@ function changeSlide() {
 
     slides[index].classList.add('active')
     bullets[index].classList.add('active')
+    
 
 }
+
+let autoSlide = setInterval(() => {
+    index++;
+
+    if (index < slides.length) {
+    changeSlide()
+    } else {
+    index = 0
+    changeSlide()
+    }
+}, 5000)
+
+function startAutoSlide() {
+    autoSlide = setInterval(() => {
+        index++;
+
+        if (index < slides.length) {
+            changeSlide();
+        } else {
+            index = 0;
+            changeSlide();
+        }
+    }, 5000);
+}
+
+slider.addEventListener('mouseenter', () => {
+     clearInterval(autoSlide);
+});
+
+slider.addEventListener('mouseleave', () => {
+    startAutoSlide();
+});
+
+
 
 
 btnRight.addEventListener('click', () => {
