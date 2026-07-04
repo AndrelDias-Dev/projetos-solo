@@ -24,6 +24,7 @@ function changeSlide() {
 
 }
 
+
 let autoSlide = setInterval(() => {
     index++;
 

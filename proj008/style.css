@@ -362,6 +362,7 @@ header .btn-contato {
     opacity: .8;
 }
 
+
 .bullets li:not(li.active) {
     background-color: rgba(255, 255, 255);
     opacity: .4;
