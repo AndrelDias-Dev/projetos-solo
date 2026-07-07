@@ -1,0 +1,168 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+/* HEADER */
+
+header {
+    padding: 40px 0px;
+}
+
+header .interface {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    font-size: 1.5rem;
+}
+
+header .logo span {
+    color: cyan;
+}
+
+header ul {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+}
+
+header ul li a {
+    text-decoration: none;
+    padding: 10px;
+    font-size: 1.2rem;
+    color: black;
+    border: 2px solid transparent;
+    transition: .4s;
+
+    display: block;
+}
+
+header ul li a:hover {
+    border-bottom: 2px solid cyan;
+    color: cyan;
+}
+
+header .buttons {
+    display: flex;
+    gap: 10px;
+}
+
+header .buttons .btn-login {
+    padding: 5px 20px;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+header .buttons .btn-login:nth-child(1), header .buttons .btn-login:nth-child(2):hover {
+    color: cyan;
+    border: 2px solid cyan;
+    background-color: white;
+}
+
+header .buttons .btn-login:nth-child(2), header .buttons .btn-login:nth-child(1):hover  {
+    background-color: cyan;
+    color: white;
+    border: 2px solid cyan;
+}
+
+/* / HEADER */
+
+/* HERO */
+
+section#hero {
+    padding: 80px 0px;
+    background-color: rgb(192, 251, 251);
+}
+
+#hero .interface {
+    display: flex;
+    flex-direction: flex;
+    justify-content: space-between;
+    gap: 20px;
+    position: relative;
+    top: 200px;
+}
+
+.hero-text h1 {
+    line-height: 40px;
+}
+
+.hero-text span {
+    color: cyan;
+}
+
+.hero-text p {
+    padding: 10px 0px;
+}
+
+.hero-pesquisa {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 50px;
+    margin-top: 80px;
+    gap: 20px;
+}
+
+.hero-pesquisa select {
+    border: 0px solid black;
+    font-size: 1rem;
+    outline: none;
+    display: flex;
+}
+
+.hero-pesquisa i {
+    font-size: 2rem;
+}
+
+
+.btn-pesquisa a {
+    border-radius: 50%;
+    background-color: cyan;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+
+.btn-pesquisa a i {
+    font-size: 1.5rem;
+}
+
+.circle {
+    content: "";
+    width: 80vw;
+    height: 80vh;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    background-color: cyan;
+}
+
+/* / HERO */
+
+/* HERO BAR*/
+
+
+
+/* HERO BAR*/

@@ -1,11 +1,122 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--/ Font Awesome -->
+
+    <!-- Font Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!--/ Font Google -->
+
+    <link rel="stylesheet" href="estilos/style.css">
+    <title>E-Saúde Prime</title>
 </head>
+
 <body>
-    
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <h1>E-<span>Saúde</span></h1>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Aplicação</a></li>
+                    <li><a href="#">Histórico</a></li>
+                </ul>
+            </nav>
+
+            <div class="buttons">
+
+                <button class="btn-login">
+                    Login
+                </button>
+
+                <button class="btn-login">
+                    Sign up
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="interface">
+            <div class="hero-text">
+                <h1>Encontre & Procure seu</h1>
+                <h1><span>Favorito</span> Doutor</h1>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                <div class="hero-pesquisa">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <select class="pesquisa-input">
+                        
+                        <option value="">Selecione seu Médico</option>
+                        <option value="joao">Dr. João Silva</option>
+                        <option value="maria">Dra. Maria Souza</option>
+                        <option value="carlos">Dr. Carlos Lima</option>
+                    </select>
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    <select class="pesquisa-input">
+                        <option value="">Selecione seu Localização</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="COR">Coritiba</option>
+                    </select>
+
+                    <div class="btn-pesquisa">
+                        <a href="#">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="circle">
+            </div>
+        </div>
+    </section>
+
+    <section class="hero-bar">
+        <div class="interface">
+
+            <div class="benefits-item">
+                <h2>24/7</h2>
+                <p>Suporte Online</p>
+            </div>
+
+            <div class="benefits-item">
+                <h2>100+</h2>
+                <p>Doutores</p>
+            </div>
+
+            <div class="benefits-item">
+                <h2>1M+</h2>
+                <p>Pacientes Ativos</p>
+            </div>
+
+
+            <div class="hero-bar-img">
+                <img src="imagens/hero-img.png" alt="">
+            </div>
+        </div>
+    </section>
 </body>
+
 </html>
