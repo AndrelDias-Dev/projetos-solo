@@ -13,6 +13,8 @@
     padding: 0 4%;
 }
 
+
+
 body {
     height: 200vh;
 }
@@ -96,7 +98,6 @@ section#hero {
 
 #hero .interface {
     display: flex;
-    flex-direction: flex;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
@@ -107,7 +108,7 @@ section#hero {
     max-width: 700px;
     flex: 1 1 400px;
 
-    z-index: 3;
+    z-index: 9;
 
     
 }
@@ -191,18 +192,23 @@ section.hero-bar {
     padding: 40px 0px;
     background-color: cyan;
     position: relative;
+    max-width: 100%;
 }
 
 .hero-bar .interface {
     display: flex;
     align-items: center;
-    justify-content: left;
-    gap: 5rem;
+    justify-content: flex-start;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .benefits-item {
     text-align: center;
     color: white;
+
+
+    z-index: 2;
 }
 
 .benefits-item + .benefits-item {
@@ -211,7 +217,7 @@ section.hero-bar {
 }
 
 .benefits-item h2 {
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .benefits-item p {
@@ -220,12 +226,16 @@ section.hero-bar {
 }
 
 
+
+
 .hero-bar-img img {
     position: absolute;
     max-width: 1000px;
+    height: auto;
     bottom: 0;
     right: 0;
-    z-index: 2;
+    object-fit: cover;
+    z-index: 3;
 }
 
 .circle {
@@ -234,11 +244,12 @@ section.hero-bar {
     height: 800px;
     position: absolute;
     bottom: 0;
-    right: -150px;
+    right: -140px;
     background-color: cyan;
     transform: translate(-22%, 30%);
     border-radius: 50%;
     clip-path: inset(0 0 50% 0);
+    z-index: 1;
 
 }
 
