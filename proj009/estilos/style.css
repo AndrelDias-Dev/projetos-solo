@@ -31,6 +31,7 @@ header .interface {
     align-items: center;
 }
 
+
 header .logo h1 {
     font-size: 1.5rem;
 }
@@ -113,6 +114,31 @@ section#hero {
     
 }
 
+@keyframes drop {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-text h1:nth-child(1) {
+    transform: translateY(40px);
+    opacity: .2;
+    animation: drop 1s ease forwards;
+}
+
+.hero-text h1:nth-child(2) {
+    transform: translateY(20px);
+    opacity: .2;
+    animation: drop 2s ease forwards;
+}
+
+.hero-text p {
+    transform: translateY(20px);
+    opacity: .2;
+    animation: drop 3s ease forwards;
+}
+
 .pesquisa-input {
     flex: 1 1 300px;
     min-width: 150px;
@@ -188,14 +214,14 @@ section#hero {
 
 /* HERO BAR*/
 
-section.hero-bar {
+section#hero-bar {
     padding: 40px 0px;
     background-color: cyan;
     position: relative;
     max-width: 100%;
 }
 
-.hero-bar .interface {
+#hero-bar .interface {
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -254,4 +280,104 @@ section.hero-bar {
 }
 
 /* HERO BAR*/
+
+/* CARDS */
+
+section#cards-benefits {
+    padding: 80px 0px;
+}
+
+section#cards-benefits h2 {
+    font-size: 2.5rem;
+}
+
+#cards-benefits .interface h2 {
+    padding: 0px 0px;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 40px 0px;
+}
+
+.cards-item {
+    padding: 30px;
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+    flex: 1 200px;
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.cards-item i {
+    font-size: 2rem;
+    border-radius: 50%;
+    background-color: white;
+    padding: 10px;
+    color: cyan
+}
+
+
+.cards-item:hover {
+    background-color: cyan;
+    color: white;
+    box-shadow: none;
+}
+
+/* / CARDS */
+
+/* NEED */ 
+section#need {
+    padding: 80px 0px;
+}
+
+#need .interface {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    background-color: aqua;
+}
+
+.need-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.need-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    min-width: 570px;
+}
+
+.need-text h2 {
+    font-size: 2.4rem;
+}
+
+.need-check {
+    list-style-type: none;
+}
+
+.need-check li {
+    display: flex;
+    align-items: center;
+    line-height: 40px;
+    gap: 10px;
+}
+
+.more p {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+
+
+/* / NEED */
 
