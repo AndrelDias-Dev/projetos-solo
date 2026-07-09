@@ -337,27 +337,41 @@ section#need {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 40px;
-    background-color: aqua;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex: 0 300px;
+}
+
+.need-img {
+    flex: 1 0 100px;
 }
 
 .need-img img {
     max-width: 100%;
     height: auto;
     border-radius: 20px;
+    object-fit: cover;
+    min-width: 310px;
 }
 
 .need-text {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex: 1;
-    min-width: 570px;
+    height: 100%;
+    flex: 0 470px;
 }
 
 .need-text h2 {
     font-size: 2.4rem;
+    line-height: 50px;
 }
+
+.need-text span {
+    display: block;
+}
+
+
 
 .need-check {
     list-style-type: none;
@@ -371,13 +385,105 @@ section#need {
 }
 
 .more p {
-    color: rgb(255, 255, 255);
+    color: cyan;
     cursor: pointer;
     font-weight: bold;
     font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* / NEED */
+
+/* RATING */
+
+section#rating {
+    padding: 80px 0px;
+}
+
+#rating .interface {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#rating img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.rating-users {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1 1 300px;
+}
+
+.rating-icons .icons {
+    display: flex;
+    align-items: center;
+    
 }
 
 
+.rating-users h2 {
+    font-size: 2.2rem;
+    line-height: 50px;
+}
 
-/* / NEED */
+.rating-users p {
+    padding: 20px 0px;
+}
+
+.rating-users span:nth-child(1) {
+    color: cyan;
+}
+
+.rating-users span:nth-child(2) {
+    display: block;
+}
+
+.rating-reviews {
+    padding: 20px 0px;
+}
+
+
+.users-comentary {
+    flex: 1 1 400px;
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px black;
+}
+
+.users-comentary .users {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.users-comentary .user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.users-comentary p {
+    padding: 20px 0px;
+}
+
+.user-stars i {
+    color: yellow;
+    font-size: 1.3rem;
+}
+
+/* / RATING */
+
+
 
