@@ -151,7 +151,7 @@ section#hero {
 
 .hero-text h1 {
     line-height: 60px;
-    font-size: 3.4rem;
+    font-size: clamp(2.3rem, 7vw, 3.6rem);
 }
 
 .hero-text span {
@@ -252,12 +252,14 @@ section#hero-bar {
 }
 
 .benefits-item h2 {
-    font-size: 3rem;
+    font-size: clamp(2rem, 7vw, 3rem);
 }
 
 .benefits-item p {
-    font-size: 1.3rem;
+    font-size: clamp(1rem, 7vw, 1.5rem);
+    line-height: 25px;
 }
+
 
 .hero-bar-img {
     flex: 1;
