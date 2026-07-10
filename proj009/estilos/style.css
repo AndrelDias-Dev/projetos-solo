@@ -10,13 +10,13 @@
 .interface {
     max-width: 1280px;
     margin: 0 auto;
-    padding: 0 4%;
+    padding: 0px 4%;
 }
 
 
 
 body {
-    height: 200vh;
+    height: 100%;
 }
 
 /* HEADER */
@@ -342,6 +342,8 @@ section#need {
 
 .need-img {
     flex: 1 450px;
+    display: flex;
+    align-items: center;
 }
 
 .need-img img {
@@ -487,6 +489,192 @@ section#rating {
 }
 
 /* / RATING */
+
+/* QUALITY */
+
+section#quality {
+    padding: 80px 0px;
+    background-color: rgba(0, 255, 255, 0.15);
+}
+
+#quality .interface {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.quality-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    text-align: justify;
+}
+
+.quality-text h2 {
+    font-size: 2.4rem;
+    line-height: 50px;
+}
+
+.quality-text .text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.quality-text span {
+    color: cyan;
+    display: block;
+}
+
+.quality-img {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.quality-img img {
+    max-width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    height: auto;
+}
+
+/* / QUALITY */
+
+/* SUBSCRIBE */
+
+section#subscribe {
+    padding: 80px 0px;
+}
+
+#subscribe .interface {
+    background-color: cyan;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 8rem;
+    border-radius: 20px;
+}
+
+#subscribe .interface h2 {
+    font-size: 2.4rem;
+}
+
+.subscribe-text {
+    background-color: white;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.subscribe-text input {
+    width: calc(100% - 55px);
+    height: 100%;
+    font-size: 2.5rem;
+    border: 0px;
+    border-radius: 40px;
+    outline: none;
+    text-indent: 20px;
+}
+
+.subscribe-text i {
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: cyan;
+    border-radius: 50%;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.btn-subscribe {
+    border: none;
+    cursor: pointer;
+}
+
+
+
+/* / SUBSCRIBE */
+
+/* RODAPE */
+
+.rodape {
+    background-color: cyan;
+    padding: 80px 0px;
+    color: white;
+}
+
+.rodape .interface {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rodape-top {
+    display: flex;
+    border-bottom: 2px solid white;
+    padding: 40px 0px;
+    gap: 50px;
+}
+
+.rodape-redes, .rodape-links, .rodape-address {
+    flex: 1;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.rodape-icons {
+    font-size: 2rem;
+    display: flex;
+    gap: 20px;
+}
+
+
+.rodape-links ul {
+    list-style-type: none;
+}
+
+.rodape h3 {
+    font-size: 2rem;
+}
+
+.rodape-links a {
+    text-decoration:none;
+    color: white;
+}
+
+.rodape-links a:hover {
+    text-decoration: underline;
+}
+
+.rodape-bottom {
+    padding: 20px;
+    font-size: 1.3rem;
+}
+
+
+
+
+
+.rodape-address iframe {
+    max-width: 100%;
+    min-width: 366px;
+    max-height: 166px;
+    flex: 1;
+}
+
+/* / RODAPE */
 
 
 
