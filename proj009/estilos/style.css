@@ -17,10 +17,18 @@ body {
     height: 100%;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* HEADER */
 
 header {
     padding: 40px 0px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 9999;
 }
 
 header .interface {
@@ -54,7 +62,7 @@ header ul li a {
     font-size: 1.2rem;
     color: black;
     border: 2px solid transparent;
-    transition: .4s;
+    transition: .3s ease;
     padding: 0px 10px;
 
     display: block;
