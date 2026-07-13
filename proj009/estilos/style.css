@@ -744,25 +744,49 @@ section#subscribe {
 
 #modal {
     position: fixed;
+
+    opacity: 0;
+    pointer-events: none;
+
     inset: 0;
     width: 100%;
-    display: none;
     justify-content: center;
     align-items: center;
-    background: rgba(0, 0, 0, 0.4) ;
+    background: rgba(0, 0, 0, 0.4);
+
     backdrop-filter: blur(3px);
-    z-index: 10000;
+    z-index: 100000;
+}
+
+#modal.active {
+    display: flex;
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.4s ease;
+    z-index: 100000;
 }
 
 .modal-content {
-    width: 100%;
+    width: 90vw;
     max-width: 600px;
     border-radius: 1rem;
     padding: 1.5rem;
     background-color: white;
     display: flex;
-    gap: 20px;
     flex-direction: column;
+    gap: 10px;
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.register-account {
+    display: flex;
+    gap: 5px;
+    padding: 8px 0px;
 }
 
 
@@ -774,6 +798,18 @@ section#subscribe {
 
 .modal-header span {
     color: cyan;
+}
+
+.btn-close {
+    width: 28px;
+    aspect-ratio: 1 / 1;
+    padding: 2px;
+    background-color: cyan;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
 }
 
 .modal-inputs {
@@ -795,13 +831,14 @@ section#subscribe {
     text-indent: 5px;
     border-radius: 0.5rem;
     padding: 2px;
+    border: 2px solid black;
 }
 
 .remember-passoword {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding: 5px 0px;
-    gap: 10px;
+    padding: 8px 0px;
 }
 
 .remember {
@@ -814,21 +851,18 @@ section#subscribe {
     cursor: pointer;
 }
 
-.remember-password {
-
-}
-
 .btn-entrar {
     width: 100%;
     font-size: 1.3rem;
     border-radius: 1rem;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.4);
     border: none;
     transition: .2s ease;
     cursor: pointer;
     background-color: cyan;
     color: white;
     font-weight: 500;
+    padding: 0.2rem;
 }
 
 .btn-entrar:hover {
