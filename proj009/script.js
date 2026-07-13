@@ -21,10 +21,4 @@ btnClose.addEventListener('click', () => {
     modal.classList.remove('active')
 })
 
-modal.addEventListener('click', (event) => {
-
-    if (event.target === event.currentTarget) {
-        modal.classList.remove('active')
-    }
-})
-
+modal.addEventListener('click', )
