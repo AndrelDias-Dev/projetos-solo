@@ -29,6 +29,7 @@ header {
     position: sticky;
     top: 0;
     background-color: white;
+    box-shadow: 3px 0px 5px cyan;
     z-index: 9999;
 }
 
