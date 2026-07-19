@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="responsive.css" media="screen">
+    <script defer src="script.js"></script>
+    <title>Shope Brasil</title>
+</head>
+
+<body>
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <span>SB</span>
+
+                <div class="logo-header">
+                    <h1>Shope</h1>
+                    <span> Brasil</span>
+                </div>
+            </div>
+
+            <ul class="header-menu">
+                <li class="menu-link">
+                    <a href="#">Início</a>
+                </li>
+                <li class="menu-link">
+                    <a href="#">Categorias</a>
+                </li>
+                <li class="menu-link">
+                    <a href="#">Ofertas</a>
+                </li>
+                <li class="menu-link">
+                    <a href="#">Sobre</a>
+                </li>
+            </ul>
+
+            <div class="header-pesquisa">
+                <div class="pesquisa-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <input type="text" id="seach-input" placeholder="Procure produtos...">
+            </div>
+
+            <div class="header-icons">
+                <i class="fa-solid fa-user"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="interface">
+            <div class="main-left">
+                <div class="filter-icon">
+                    <i class="fa-solid fa-filter"></i>
+                    Filters
+                </div>
+                <div class="category-container">
+                    <button class="category">
+                        Categorias
+                        <i class="fa-solid fa-angle-up"></i>
+                    </button>
+
+                    <div class="category-items">
+                        <div class="category-item">
+                            <div class="category-check">
+                                <input type="checkbox" name="" class="category-filter" value="eletronicos">
+                                Eletronicos
+                            </div>
+
+                            <div class="category-number">
+                                2
+                            </div>
+                        </div>
+
+                        <div class="category-item">
+                            <div class="category-check">
+                                <input type="checkbox" name="" class="category-filter" value="roupas">
+                                Roupas
+                            </div>
+
+                            <div class="category-number">
+                                1
+                            </div>
+                        </div>
+
+                        <div class="category-item">
+                            <div class="category-check">
+                                <input type="checkbox" name="" class="category-filter" value="livros">
+                                Livros
+                            </div>
+
+                            <div class="category-number">
+                                1
+                            </div>
+                        </div>
+                        <div class="category-item">
+                            <div class="category-check">
+                                <input type="checkbox" name="" id="">
+                                Sports
+                            </div>
+
+                            <div class="category-number">
+                                1
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <button class="rating-container">
+                    <div class="rating-minimum">
+                        <p>Minimum Rating</p>
+                        <i class="fa-solid fa-angle-up"></i>
+                    </div>
+
+                    <div class="rating-drop">
+                        <div class="rating-item">
+                            <input type="checkbox" name="" id="">
+                            4+ Stars
+                        </div>
+
+                        <div class="rating-item">
+                            <input type="checkbox" name="" id="">
+                            3+ Stars
+                        </div>
+
+                        <div class="rating-item">
+                            <input type="checkbox" name="" id="">
+                            2+ Stars
+                        </div>
+
+                        <div class="rating-item">
+                            <input type="checkbox" name="" id="">
+                            1+ Stars
+                        </div>
+                    </div>
+                </button>
+            </div>
+
+            <div class="main-right">
+                <div class="products">
+                    <div class="products-bar">
+                        <div class="products-value">
+                            Products(8)
+                        </div>
+
+                        <div class="products-grid-btn">
+                            <div class="products-buttons">
+                                <button class="grid">
+                                    <i class="fa-solid fa-table-cells"></i>
+                                </button>
+                                <button class="list">
+                                    <i class="fa-solid fa-bars-staggered"></i>
+                                </button>
+                            </div>
+
+                            <button class="products-sort">
+                                <div class="product-order">
+                                    <i class="fa-solid fa-up-down"></i>
+                                    <p>Ordernar por: Relevance</p>
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="products-grid">                
+                        ...                 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
