@@ -41,12 +41,19 @@ header .logo {
     line-height: 23px;
 }
 
+.logo-tittle h1 {
+    font-weight: bold;
+}
 
 
 .logo-bottom {
     display: flex;
     align-items: center;
     gap: 5px;
+}
+
+.logo-bottom h2 {
+    font-size: 1.5rem;
 }
 
 .logo-tittle .line {
@@ -87,6 +94,7 @@ header .logo {
     border: 1px solid rgb(251, 194, 20);
     background-color: black;
     border-radius: 8px;
+    font-weight: bold;
     cursor: pointer;
 }
 
@@ -316,6 +324,18 @@ div.agenda-transform i {
     text-wrap: nowrap;
 }
 
+/* TESTEMONIALS */
+
+section#testemonials {
+    padding: 40px 0px;
+}
+
+.user-img img {
+    width: 100px;
+    aspect-ratio: 1/ 1;
+    object-fit: cover;
+    border-radius: 50%;
+}
 
 
 
