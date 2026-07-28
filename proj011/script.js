@@ -1,59 +1,52 @@
+const track = document.querySelector('.testemonials-track');
 const slides = document.querySelectorAll('.testemonials-card');
-const btnLeft = document.querySelector('.teste-left')
-const btnRight = document.querySelector('.teste-right')
+const container = document.querySelector('.testemonials-container')
+
+const btnLeft = document.querySelector('.teste-left');
+const btnRight = document.querySelector('.teste-right');
+
 let index = 0;
 
-function changeSlide() {
-    const slideActive = document.querySelector('.testemonials-card.active')
+let autoPlay;
 
-    slideActive.classList.remove('active')
-
-    slides[index].classList.add('active')
+function updateSlide() {
+    track.style.transform = `translateX(-${index * 100}%)`
 }
 
-btnRight.addEventListener('click', () => {
-    index++;
+function nextSlide() {
+    index++
 
-    if (index < slides.length) {
-
-    const slideActive = document.querySelector('.testemonials-card.active')
-
-    slideActive.classList.remove('active')
-
-    slides[index].classList.add('active')
-
-    } else {
-        index = 0;
-
-    const slideActive = document.querySelector('.testemonials-card.active')
-
-    slideActive.classList.remove('active')
-
-    slides[index].classList.add('active')
+    if (index >= slides.length) {
+        index = 0
     }
 
-})
+    updateSlide()
+}
 
-btnLeft.addEventListener('click', () => {
+function prevSlide() {
     index--
 
-    if (index >= slides.length - 4) {
-    const slideActive = document.querySelector('.testemonials-card.active')
-
-    slideActive.classList.remove('active')
-
-    slides[index].classList.add('active')
-    } else {
+    if (index < 0) {
         index = slides.length - 1;
-
-    const slideActive = document.querySelector('.testemonials-card.active')
-
-    slideActive.classList.remove('active')
-
-    slides[index].classList.add('active')
-        
     }
 
-})
+    updateSlide()
+}
 
-console.log(slides)
+function startAutoplay() {
+    autoPlay = setInterval(nextSlide, 3000);
+}
+
+function stopAutoplay() {
+    clearInterval(autoPlay)
+}
+
+
+btnRight.addEventListener('click', nextSlide)
+btnLeft.addEventListener('click', prevSlide)
+
+container.addEventListener('mouseenter', stopAutoplay)
+container.addEventListener('mouseleave', startAutoplay)
+
+
+
