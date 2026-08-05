@@ -132,6 +132,9 @@ section#hero {
 .slider {
     position: relative;
     width: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+    margin: 0 auto;
 }
 
 .viewport {
@@ -141,12 +144,14 @@ section#hero {
 
 .slider-track {
     display: flex;
-    gap: 20px;
     transition: transform .5s ease;
+    transform: translateX(-100%);
 }
 
 .slide-item {
-    flex:  0 0 85%;
+    flex:  0 0 100%;
+    margin: 0 auto;
+
     color: white;
     overflow: hidden;
     cursor: pointer;
@@ -179,7 +184,7 @@ section#hero {
    position: absolute;
    bottom: 40px;
    left: 40px;
-   max-width: 500px;
+   max-width: 420px;
    width: 100%;
 
    display: flex;
@@ -187,6 +192,11 @@ section#hero {
    justify-content: space-between;
    gap: 10px;
    z-index: 2;
+}
+
+.slide-description {
+    text-align: justify;
+    line-height: 20px;
 }
 
 .slide-badge span {
@@ -310,6 +320,42 @@ section#hero {
     position: absolute;
 }
 
+
+.slider-bullets {
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+
+    display: flex;
+    gap: 10px;
+}
+
+.bullet {
+    border-radius: 50%;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.slider-bullets .bullet {      
+  transition: all 0.3s ease;   
+  background: transparent;
+  border: 1px solid white;
+  backdrop-filter: blur(4px);
+}
+
+.bullet.active {
+    background-color: var(--highlight);
+    width: 40px;
+    border-radius: 10px;
+}
+
+.bullet:hover {
+    background-color: var(--highlight);
+    transform: scale(1.2);
+}
 
 
 
