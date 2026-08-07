@@ -32,12 +32,12 @@ const dots = document.querySelectorAll('.bullet');
 // ==========================
 
 function updateSlide() {
-    console.log("Index:", index);
+    ("Index:", index);
 
     track.style.transform = `translateX(-${index * 100}%)`;
 
     dots.forEach((dot, i) => {
-        console.log(i, i === index);
+        (i, i === index);
 
         dot.classList.toggle("active", i === index);
     });

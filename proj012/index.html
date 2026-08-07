@@ -13,6 +13,9 @@
         @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
     </style>
 
+    <!-- cdn swipper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
 
     <link rel="stylesheet" href="css/estilos.css">
 
@@ -121,13 +124,49 @@
         </div>
     </section>
 
+    <section id="search">
+        <div class="interface">
+            <div class="search-filter">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" name="seach-input" id="seach-input" placeholder="Pesquise Filmes e Séries...">
+            </div>
+        </div>
+    </section>
 
+    <section id="categories">
+        <div class="interface">
+            <h2>Categorias</h2>
 
+            <div class="filters">
+                <button class="filter active">Todos</button>
+                <button class="filter">Ação</button>
+                <button class="filter">Comédia</button>
+                <button class="filter">Drama</button>
+                <button class="filter">Terror</button>
+                <button class="filter">Ficção</button>
+                <button class="filter">Sci-fi</button>
+                <button class="filter">Suspense</button>
+                <button class="filter">Romance</button>
+                <button class="filter">Documentário</button>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="slider-catalog">
+        <div class="swiper filmesSwiper">
+            <div class="swiper-wrapper">
+                    
+            </div>
+                <div class="swiper-button-prev"><i class="fa-solid fa-angle-left"></i></div>
+                <div class="swiper-button-next"><i class="fa-solid fa-angle-right"></i></div>
     </section>
 
 
 
     <script type="module" src="./js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="./js/slider2.js"></script>
 
 </body>
 
