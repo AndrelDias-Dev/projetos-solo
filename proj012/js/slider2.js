@@ -31,8 +31,8 @@ wrapper.innerHTML = movies.map(filme => {
 
 const swiper = new Swiper('.filmesSwiper', {
   slidesPerView: 2,
+  centeredSlides: 3,
   spaceBetween: 20,
-  centeredSlides: false,
   speed: 300,
   loop: true,
   grabCursor: true,
@@ -41,14 +41,18 @@ const swiper = new Swiper('.filmesSwiper', {
     disableOnInteraction: false,
   },
   breakpoints: {
-    768: { slidesPerView: 3 },
-    1200: { slidesPerView: 5 }
+    768: { slidesPerView: 3},
+    1200: { slidesPerView: 5}
   },
 
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev'
   }
+});
+
+swiper.el.addEventListener('mouseenter', () => {
+  swiper.autoplay.stop();
 });
 
 swiper.el.addEventListener('mouseenter', () => {
