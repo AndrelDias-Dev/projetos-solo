@@ -55,11 +55,6 @@ swiper.el.addEventListener('mouseenter', () => {
   swiper.autoplay.stop();
 });
 
-swiper.el.addEventListener('mouseenter', () => {
-  swiper.autoplay.stop();
-});
-
-
 swiper.el.addEventListener('mouseleave', () => {
   swiper.autoplay.start();
 });
