@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+#hero {
+    padding: 40px 0px;
+}
+
+.interface {
+    display: flex;
+    gap: 10px;
+}
+
+.hero-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.hero-left span {
+    color: var(--highlight);
+}
+
+.hero-left h1 {
+    font-size: clamp(2.5rem, 3vw, 3.3rem);
+}
+
+.hero-left p {
+    font-weight: 600;
+}
+
+.hero-left .hero-buttons {
+    display: flex;
+    gap: 5px;
+}
+
+.hero-left .hero-buttons button {
+    padding: 5px 20px;
+    border-radius: 20px;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.hero-left .hero-buttons button:nth-child(1) {
+    background-color: var(--highlight);
+    color: white;
+}
+
+.hero-left .hero-buttons button:nth-child(2):hover {
+    background-color: var(--highlight);
+    color: white;
+}
+
+.hero-left .hero-buttons button:nth-child(2):active {
+    color: red;
+}
+
+.hero-right {
+    flex: 1;
+    position: relative;
+}
+
+.hero-right p {
+    text-align: center;
+    font-weight: 600;
+}
+
+.hero-right p span {
+    color: var(--highlight);
+}
+
+.hero-right img {
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+.hero-right .discount {
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1.1rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.hero-right .discount p {
+    font-weight: 700;
+}
+
+.hero-right .discount span {
+    color: var(--highlight);
+}
+
+.hero-right .discount-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-right .discount-top span {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.hero-right .discount-top i {
+    color: var(--highlight);
+}
+
+.hero-right .discount-top p {
+    color: var(--highlight);
+}
+
+.discount-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.discount-bottom i {
+    color: rgb(153, 255, 0);
+    font-size: 1.4rem;
+}

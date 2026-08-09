@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+header {
+    padding: 10px 0px;
+}
+
+header .interface {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: clamp(1rem, 3vw, 1.3rem);
+}
+
+header .logo {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+header .logo i {
+    color: var(--highlight);
+    position: absolute;
+}
+
+header .logo span {
+    color: var(--highlight);
+}
+
+header .menu {
+    display: flex;
+    align-items: center;
+    gap:20px;
+    list-style-type: none;
+}
+
+header .menu a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+header .menu a:hover {
+    color: var(--highlight);
+}
+
+header .menu a.active {
+    color: var(--highlight);
+}
+
+header .sign {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+header .sign .register {
+    padding: 5px 20px;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    border: none;
+    background-color: var(--highlight);
+    color: white;
+    font-weight: bold;
+}
+
+
+
+
+
