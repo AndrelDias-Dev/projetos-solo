@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- CDNJS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- LINK CSS -->
     <link rel="stylesheet" href="styles/reset.css" media="all">
     <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/hero.css" >
+    <link rel="stylesheet" href="styles/hero.css">
     <title>Sabores do Mundo</title>
 </head>
+
 <body>
     <header>
         <div class="interface">
@@ -41,7 +45,8 @@
         <div class="interface">
             <div class="hero-left">
                 <h1>Um prato <span>saudável</span> e <span>saboroso</span> esperando por você</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit, amet consectetur
+                    adipisicing elit.</p>
 
                 <div class="hero-buttons">
                     <button class="btn-left">
@@ -53,20 +58,67 @@
                     </button>
                 </div>
 
-                <div class="hero-right">
-                <div class="discount">
-                    <div class="discount-top">
-                        <span>5%</span>
-                        <i class="fa-solid fa-award"></i>
+                <div class="thumbs">
+                    <div class="thumb-item">
+                        <div class="thumb-img">
+                            <img src="assets/food-img/food1.png" alt="">
+                        </div>
+
+                        <div class="thumb-title">
+                            Bibimbap
+                        </div>
+
+                        <div class="thumb-info">
+                            <div class="cal">
+                                60 Calorias
+                            </div>
+
+                            <div class="persons">
+                                4 Pessoas
+                            </div>
+                        </div>
+
+                        <div class="thumb-price">
+                            <div class="price">
+                                $2.50
+                            </div>
+
+                            <div class="add">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
                     </div>
-                    <p><span>Desconto</span> para 2 pedidos</p>
+
+                    <div class="thumb-item">
+                        <div class="thumb-img">
+                            <img src="assets/food-img/food2.png" alt="">
+                        </div>
+
+                        <div class="thumb-title">
+                            Salada de frutas <br> e vegetais
+                        </div>
+
+                        <div class="thumb-info">
+                            <div class="cal">
+                                60 Calorias
+                            </div>
+
+                            <div class="persons">
+                                4 Pessoas
+                            </div>
+                        </div>
+
+                        <div class="thumb-price">
+                            <div class="price">
+                                $2.50
+                            </div>
+
+                            <div class="add">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <img src="assets/food-img/food1.png" alt="">
-                <div class="discount-bottom">
-                    <p><span>Conforme</span> seus pedidos</p>
-                    <i class="fa-solid fa-circle-check"></i>
-                </div>
-            </div>
             </div>
 
             <div class="hero-right">
@@ -77,14 +129,17 @@
                     </div>
                     <p><span>Desconto</span> para 2 pedidos</p>
                 </div>
-                <img src="assets/food-img/food1.png" alt="">
+                <img id="comida1" src="assets/food-img/food1.png" alt="">
                 <div class="discount-bottom">
-                    <p><span>Conforme</span> seus pedidos</p>
+                    <p><span>Confirme</span> seus pedidos</p>
                     <i class="fa-solid fa-circle-check"></i>
                 </div>
             </div>
-            
+
         </div>
     </section>
+
+    <script src="dynamic.js"></script>
 </body>
+
 </html>

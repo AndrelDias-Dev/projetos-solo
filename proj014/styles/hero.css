@@ -21,7 +21,7 @@
 }
 
 .hero-left h1 {
-    font-size: clamp(2.5rem, 3vw, 3.3rem);
+    font-size: clamp(2.5rem, 4vw, 3.3rem);
 }
 
 .hero-left p {
@@ -47,6 +47,11 @@
     color: white;
 }
 
+.hero-left .hero-buttons button:nth-child(1):hover {
+    background-color: white;
+    color: black;
+}
+
 .hero-left .hero-buttons button:nth-child(2):hover {
     background-color: var(--highlight);
     color: white;
@@ -70,10 +75,9 @@
     color: var(--highlight);
 }
 
-.hero-right img {
+.hero-right #comida1 {
     width: 100%;
     object-fit: cover;
-    
 }
 
 .hero-right .discount {
@@ -129,3 +133,91 @@
     color: rgb(153, 255, 0);
     font-size: 1.4rem;
 }
+
+/* TABS */
+
+.thumbs {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.thumb-item {
+   border-radius: 30px;
+   width: 200px;
+   height: auto;
+   padding: 110px 20px 20px;
+   position: relative;
+   text-align: center;
+   cursor: pointer;
+    transition: transform 0.3s ease;
+
+   display: flex;
+   justify-content: space-between;
+   flex-direction: column;
+   gap: 10px;
+}
+
+.thumb-item:hover {
+    background-color: var(--highlight);
+    color: white;
+}
+
+.thumb-item.active {
+    background-color: var(--highlight);
+    color: white;
+}
+
+
+
+.thumb-item:hover .add {
+    background-color: white;
+    color: var(--highlight);
+}
+
+.thumb-img {
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.thumb-item img {
+    width: 150px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.thumb-title {
+   font-size: 1.2rem;
+   font-weight: 700;
+}
+
+.thumb-info {
+    width: 100%;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.thumb-price {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+}
+
+.thumb-price .add {
+    background-color: var(--highlight);
+}
+
+.thumb-price .add {
+    background-color: var(--highlight);
+    color: white;
+    padding: 3px;
+    width: 30px;
+    border-radius: 8px;
+
+}
+
+
+
