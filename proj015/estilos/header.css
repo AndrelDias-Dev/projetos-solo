@@ -1,0 +1,10 @@
+header {
+    height: 40px 0px;
+    background: linear-gradient(to right, rgb(48, 0, 48), rgb(145, 0, 145));
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+}
