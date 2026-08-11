@@ -11,6 +11,10 @@
     color: white;
 }
 
+.dark-theme header {
+    background-color: rgb(65, 65, 65);
+}
+
 * {
     margin: 0px;
     padding: 0px;

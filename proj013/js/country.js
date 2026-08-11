@@ -12,7 +12,7 @@ export const countrys = [
     },
 
     {
-        id:4, img:'assets/imagens/COL.png',  title: 'Bogotá', population: '46.021.356', region: 'Americas', capital: 'Buenos Aires',
+        id:4, img:'assets/imagens/COL.png',  title: 'Colombia', population: '46.021.356', region: 'Americas', capital: 'Bogotá',
     },
 
     {
