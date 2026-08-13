@@ -1,13 +1,9 @@
-export function search(movies) {
+export function search(movies, text) {
 
-    const inputText = document.querySelector('#search-input')
-
-    const textoDigitado = inputText.value
-
-    if(textoDigitado === '') {
-        return ''
+    if (text === '') {
+        return movies
     }
 
-
+    return movies.filter(movie => movie.title.toLowerCase().includes(text.toLowerCase()))
 }
 

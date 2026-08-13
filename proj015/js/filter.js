@@ -4,8 +4,8 @@ export function checkFilter(movies, genre) {
         return movies
     }
 
-    return movies.filter(movie => movie.genre === genre)
-}  
+    return movies.filter(movie => movie.genre.includes(genre))
+}
 
 
 
