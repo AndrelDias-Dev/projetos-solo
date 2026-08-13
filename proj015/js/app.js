@@ -4,8 +4,6 @@ import { checkFilter } from "./filter.js";
 import { search } from "./search.js";
 
 
-checkFilter(movies)
 renderProducts(movies)
 
-console.log()
 

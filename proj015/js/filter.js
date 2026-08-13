@@ -1,24 +1,12 @@
-export function checkFilter() {
+export function checkFilter(movies, genre) {
 
-    const check = document.querySelector('#check')
+    if (genre === '') {
+        return movies
+    }
 
-    const valorCheck = check.value;
-
-    check.addEventListener('change', () => {
-
-        if (!valorCheck === '') {
-            return ''
-        }
-
-        if (valorCheck === 'Ação'){
-            return valorCheck
-        }
-        
-      
-    })
-
-
+    return movies.filter(movie => movie.genre === genre)
 }  
+
 
 
 
