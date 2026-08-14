@@ -9,11 +9,38 @@ main {
 
 main .interface {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
 }
 
-.left-grid {
+@media screen and (max-width: 950px) {
+    #grid-container {
+        flex-direction: column;
+    }
+
+    main .interface {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.movie-right {
     flex: 1;
+}
+
+.movie-left {
+    flex: 1;
+}
+
+.movie-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+}
+
+
+.left-grid {
+   flex: 1;
 }
 
 .filter-container {
@@ -30,7 +57,16 @@ main .interface {
     background-color: rgb(77, 77, 77);
     border-radius: 8px;
     padding: 10px;
+    cursor: pointer;
+    transition: .3s ease;
 }
+
+.dropdown-filter.active  i{
+    transform: rotate(180deg);
+}
+.filter.active i:nth-child(2)  {
+    transform: rotate(180deg);
+} 
 
 ul.gender {
     display: flex;
@@ -43,10 +79,25 @@ ul.gender {
     background-color: rgb(86, 86, 86);
     list-style-type: none;
     border-radius: 8px;
-    padding: 10px;
+   
     display: flex;
     flex-direction: column;
     gap: 10px;
+    height: 0;
+    overflow: hidden;
+    transition: all .3s ease;
+
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
+
+.dropdown-filter.active {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    height: auto;
+    padding: 10px;
 }
 
 .gender-input {
@@ -57,7 +108,7 @@ ul.gender {
 }
 
 .right-grid {
-    flex: 3;
+    flex: 4;
     display: flex;
     flex-direction: column;
     gap:10px;
@@ -144,6 +195,7 @@ ul.gender {
     border-radius: 10px;
     object-fit: cover;
     flex: 0;
+    box-shadow: 0px 0px 10px #560056;
 }
 
 .movie-left {

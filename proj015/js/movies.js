@@ -12,7 +12,7 @@ export const movies = [
     },
 
     {
-        id:4, img:'assets/imagens/wars.jpg', title:'Uncharted: O Mapa Perdido', year: 2012, hours: '2h 40min', genre: ['Ação', ' Aventura'], rotten: '83%', stars:8.4, info:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi cum neque sunt ut illo, voluptate'
+        id:4, img:'assets/imagens/wars.jpg', title:'Uncharted: O Mapa Perdido', year: 2012, hours: '2h 40min', genre: ['Ação', 'Aventura'], rotten: '83%', stars:8.4, info:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi cum neque sunt ut illo, voluptate'
     },
 
     {
@@ -24,7 +24,7 @@ export const movies = [
     },
 
     {
-        id:7, img:'assets/imagens/action.jpg', title:'Uncharted: O Mapa Perdido', year: 2012, hours: '2h 40min', genre: ['Ação', 'Aventura'], rotten: '83%', stars:8.4, info:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi cum neque sunt ut illo, voluptate'
+        id:7, img:'assets/imagens/action.jpg', title:'Uncharted: O Mapa Perdido', year: 2012, hours: '2h 40min', genre: ['Ação' , 'Aventura'], rotten: '83%', stars:8.4, info:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi cum neque sunt ut illo, voluptate'
     },
 
     {
