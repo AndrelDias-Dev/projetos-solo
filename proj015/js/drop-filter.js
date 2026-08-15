@@ -7,3 +7,4 @@ filter.addEventListener('click', () => {
     filter.classList.toggle('active')
     dropFilter.classList.toggle('active')
 })
+

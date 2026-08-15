@@ -75,6 +75,13 @@ ul.gender {
     
 }
 
+
+.filter-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .dropdown-filter {
     background-color: rgb(86, 86, 86);
     list-style-type: none;

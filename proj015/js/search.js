@@ -4,6 +4,7 @@ export function search(movies, text) {
         return movies
     }
 
-    return movies.filter(movie => movie.title.toLowerCase().includes(text.toLowerCase()))
+    return movies.filter(movie => {
+        return movie.title.toLowerCase().includes(text.toLowerCase())
+    })
 }
-

@@ -29,47 +29,160 @@
         <div class="interface">
             <section id="grid-container">
 
-                <div class="left-grid">
-                    <ul class="filter-container">
-                        <div class="filter">
-                            <div class="filter-icon">
-                                <i class="fa-solid fa-filter"></i>
-                                Filter
-                            </div>
-                            <i class="fa-solid fa-chevron-down"></i>
-                        </div>
-                        <li class="dropdown-filter">
-                            <ul class="gender">
-                                <p>Gender</p>
-                                <i class="fa-solid fa-chevron-down"></i>
-                            </ul>
+    <div class="left-grid">
 
-                            <div class="gender-categories">
+    <ul class="filter-container">
 
-                                <div class="gender-input">
-                                    <input type="radio" name="genre" id="action" value="Ação">
-                                    <label for="action">Ação</label>
-                                </div>
+        <!-- FILTRO PRINCIPAL -->
+        <li class="filter">
+            <div class="filter-icon">
+                <i class="fa-solid fa-filter"></i>
+                <span>Filter</span>
+            </div>
 
-                                <div class="gender-input">
-                                    <input type="radio" name="genre" id="adventure" value="Aventura">
-                                    <label for="adventure">Aventura</label>
-                                </div>
+            <i class="fa-solid fa-chevron-down"></i>
+        </li>
 
-                                <div class="gender-input">
-                                    <input type="radio" name="genre" id="comedy" value="Comédia">
-                                    <label for="comedy">Comédia</label>
-                                </div>
 
-                                <div class="gender-input">
-                                    <input type="radio" name="genre" id="horror" value="Terror">
-                                    <label for="horror">Terror</label>
-                                </div>
+        <!-- CONTEÚDO DOS FILTROS -->
+        <li class="dropdown-filter">
 
-                            </div>
-                        </li>
-                    </ul>
+            <!-- GÊNERO -->
+            <div class="filter-section">
+
+                <div class="filter-title">
+                    <p>Genre</p>
+                    <i class="fa-solid fa-chevron-down"></i>
                 </div>
+
+                <div class="filter-options">
+
+                    <div class="gender-input">
+                        <input type="radio" name="genre" id="action" value="Ação">
+                        <label for="action">Ação</label>
+                    </div>
+
+                    <div class="gender-input">
+                        <input type="radio" name="genre" id="adventure" value="Aventura">
+                        <label for="adventure">Aventura</label>
+                    </div>
+
+                    <div class="gender-input">
+                        <input type="radio" name="genre" id="comedy" value="Comédia">
+                        <label for="comedy">Comédia</label>
+                    </div>
+
+                    <div class="gender-input">
+                        <input type="radio" name="genre" id="horror" value="Terror">
+                        <label for="horror">Terror</label>
+                    </div>
+
+                    <div class="gender-input">
+                        <input type="radio" name="genre" id="thriller" value="thriller">
+                        <label for="thriller">Thriller</label>
+                    </div>
+
+                    <div class="gender-input">
+                        <input type="radio" name="genre" id="crime" value="crime">
+                        <label for="crime">Crime</label>
+                    </div>
+
+                    <div class="gender-input">
+                        <input type="radio" name="genre" id="drama" value="drama">
+                        <label for="drama">Drama</label>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ANO -->
+            <div class="filter-section">
+
+                <div class="filter-title">
+                    <p>Year</p>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+
+                <select id="year">
+                    <option value="">Todos</option>
+                    <option value="2020">2020+</option>
+                    <option value="2015">2015+</option>
+                    <option value="2010">2010+</option>
+                    <option value="2000">2000+</option>
+                </select>
+
+            </div>
+
+
+            <!-- NOTA -->
+            <div class="filter-section">
+
+                <div class="filter-title">
+                    <p>Rating</p>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+
+                <select id="rating">
+                    <option value="">Todas</option>
+                    <option value="9">9+</option>
+                    <option value="8">8+</option>
+                    <option value="7">7+</option>
+                    <option value="6">6+</option>
+                </select>
+
+            </div>
+
+
+            <!-- DURAÇÃO -->
+            <div class="filter-section">
+
+                <div class="filter-title">
+                    <p>Duration</p>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+
+                <div class="filter-options">
+
+                    <div>
+                        <input type="radio" name="duration" id="short" value="short">
+                        <label for="short">Até 2h</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="duration" id="long" value="long">
+                        <label for="long">Mais de 2h</label>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ORDENAÇÃO -->
+            <div class="filter-section">
+
+                <div class="filter-title">
+                    <p>Sort by</p>
+                </div>
+
+                <select id="sort">
+                    <option value="">Padrão</option>
+                    <option value="rating-desc">Maior nota</option>
+                    <option value="rating-asc">Menor nota</option>
+                    <option value="year-desc">Mais recente</option>
+                    <option value="year-asc">Mais antigo</option>
+                </select>
+
+            </div>
+
+        </li>
+
+    </ul>
+
+</div>
+
 
                 <div class="right-grid">
                     <div class="search-container">

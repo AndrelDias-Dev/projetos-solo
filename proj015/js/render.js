@@ -27,7 +27,7 @@ export function renderProducts(movies) {
                     <div class="rotten">${movie.rotten}</div>
                 </div>
                 <i class="fa-solid fa-star"></i>
-                <p class="stars">8${movie.stars}</p>
+                <p class="stars">${movie.stars}</p>
             </div>
             <div class="movie-info">
                 ${movie.info}
