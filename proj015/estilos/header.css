@@ -1,10 +1,14 @@
 header {
-    height: 40px 0px;
-    background: linear-gradient(to right, rgb(48, 0, 48), rgb(145, 0, 145));
-    color: white;
     text-align: center;
+    padding: 30px 0px;
+    background: linear-gradient(to bottom, green, rgb(80, 184, 0));
 }
 
 header h1 {
-    font-size: 2rem;
+    color: white;
+    font-size: 3rem;
+    font-style: italic;
+    text-shadow: 3px 3px 3px rgb(7, 80, 0);
+
 }
+

@@ -1,210 +1,54 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
-        integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- link css -->
     <link rel="stylesheet" href="estilos/geral.css" media="all">
     <link rel="stylesheet" href="estilos/header.css">
+    <link rel="stylesheet" href="estilos/menu.css">
     <link rel="stylesheet" href="estilos/main.css">
-
-    <title>Movie Master</title>
+    <title>FILMEANDO</title>
 </head>
-
 <body>
-    <header>
-        <h1>Movie Master</h1>
-    </header>
-
     <div class="interface">
-        <h1>Faça sua Pesquisa</h1>
+        <header>
+            <h1>FILMEANDO</h1>
+        </header>
+
+        <nav>
+                <ul class="menu">
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Filmes</a> </li>
+                    <li><a href="#">Dublado</a></li>
+                    <li><a href="#">Legendado</a></li>
+                    <li><a href="#">4k</a></li>
+                    <li><a href="#">Séries</a></li>
+                    <li><a href="#">Lançamentos 2023</a></li>
+                    <li><a href="#">Lançamentos 2024</a></li>
+                    <li><a href="#">Assistir Online</a></li>
+                </ul>
+        </nav>
+
+        <main>
+            <div class="main-grid">
+                <section class="left-grid">
+                    <div class="card">
+
+                    </div>
+                </section>
+
+                <section class="right-grid">
+                    
+                </section>
+            </div>
+        </main>
     </div>
 
-    <main>
-        <div class="interface">
-            <section id="grid-container">
-
-    <div class="left-grid">
-
-    <ul class="filter-container">
-
-        <!-- FILTRO PRINCIPAL -->
-        <li class="filter">
-            <div class="filter-icon">
-                <i class="fa-solid fa-filter"></i>
-                <span>Filter</span>
-            </div>
-
-            <i class="fa-solid fa-chevron-down"></i>
-        </li>
 
 
-        <!-- CONTEÚDO DOS FILTROS -->
-        <li class="dropdown-filter">
-
-            <!-- GÊNERO -->
-            <div class="filter-section">
-
-                <div class="filter-title">
-                    <p>Genre</p>
-                    <i class="fa-solid fa-chevron-down"></i>
-                </div>
-
-                <div class="filter-options">
-
-                    <div class="gender-input">
-                        <input type="radio" name="genre" id="action" value="Ação">
-                        <label for="action">Ação</label>
-                    </div>
-
-                    <div class="gender-input">
-                        <input type="radio" name="genre" id="adventure" value="Aventura">
-                        <label for="adventure">Aventura</label>
-                    </div>
-
-                    <div class="gender-input">
-                        <input type="radio" name="genre" id="comedy" value="Comédia">
-                        <label for="comedy">Comédia</label>
-                    </div>
-
-                    <div class="gender-input">
-                        <input type="radio" name="genre" id="horror" value="Terror">
-                        <label for="horror">Terror</label>
-                    </div>
-
-                    <div class="gender-input">
-                        <input type="radio" name="genre" id="thriller" value="Thriller">
-                        <label for="thriller">Thriller</label>
-                    </div>
-
-                    <div class="gender-input">
-                        <input type="radio" name="genre" id="crime" value="Crime">
-                        <label for="crime">Crime</label>
-                    </div>
-
-                    <div class="gender-input">
-                        <input type="radio" name="genre" id="drama" value="Drama">
-                        <label for="drama">Drama</label>
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- ANO -->
-            <div class="filter-section">
-
-                <div class="filter-title">
-                    <p>Year</p>
-                    <i class="fa-solid fa-chevron-down"></i>
-                </div>
-
-                <select id="year">
-                    <option value="">Todos</option>
-                    <option value="2020">2020+</option>
-                    <option value="2015">2015+</option>
-                    <option value="2010">2010+</option>
-                    <option value="2000">2000+</option>
-                </select>
-
-            </div>
-
-
-            <!-- NOTA -->
-            <div class="filter-section">
-
-                <div class="filter-title">
-                    <p>Rating</p>
-                    <i class="fa-solid fa-chevron-down"></i>
-                </div>
-
-                <select id="rating">
-                    <option value="">Todas</option>
-                    <option value="9">9+</option>
-                    <option value="8">8+</option>
-                    <option value="7">7+</option>
-                    <option value="6">6+</option>
-                </select>
-
-            </div>
-
-
-            <!-- DURAÇÃO -->
-            <div class="filter-section">
-
-                <div class="filter-title">
-                    <p>Duration</p>
-                    <i class="fa-solid fa-chevron-down"></i>
-                </div>
-
-                <div class="filter-options">
-
-                    <div>
-                        <input type="radio" name="duration" id="short" value="short">
-                        <label for="short">Até 2h</label>
-                    </div>
-
-                    <div>
-                        <input type="radio" name="duration" id="long" value="long">
-                        <label for="long">Mais de 2h</label>
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- ORDENAÇÃO -->
-            <div class="filter-section">
-
-                <div class="filter-title">
-                    <p>Sort by</p>
-                </div>
-
-                <select id="sort">
-                    <option value="">Padrão</option>
-                    <option value="rating-desc">Maior nota</option>
-                    <option value="rating-asc">Menor nota</option>
-                    <option value="year-desc">Mais recente</option>
-                    <option value="year-asc">Mais antigo</option>
-                </select>
-
-            </div>
-
-        </li>
-
-    </ul>
-
-</div>
-
-
-                <div class="right-grid">
-                    <div class="search-container">
-                        <div class="search">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                            <input type="text" name="search-input" id="search-input" placeholder="Pesquise aqui...">
-                        </div>
-
-                        <button class="search-btn">
-                            Pesquise
-                        </button>
-                    </div>
-
-                    <div class="movie-container">
-                        <!-- CARDS JS -->
-                    </div>
-                </div>
-        </div>
-    </main>
-
-    <script type="module" src="js/app.js"></script>
-    <script src="js/drop-filter.js"></script>
+    <script src="./app.js"></script>
 </body>
-
 </html>
