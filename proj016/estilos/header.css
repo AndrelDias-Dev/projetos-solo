@@ -1,0 +1,160 @@
+header {
+    position: relative;
+}
+
+header .logo {
+    color: #fc9d26;
+    -webkit-text-stroke: 2px orangered;
+}
+
+.wave {
+  display: block;
+  width: 100%;   /* largura fixa */
+  height:1300px;
+
+  position: absolute;
+  top: 0;
+  z-index: -1;
+} 
+
+header .interface {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 80px;
+}
+
+
+nav {
+    position: relative;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    gap: 20px;
+    border-radius: 0px 0px 40px 40px;
+    backdrop-filter: blur(5px);
+    
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style-type: none;
+}
+
+nav .menu li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+    font-weight: 600;
+    position: relative;
+}
+
+nav .menu li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: red;
+}
+
+nav .menu li a:hover::after {
+    width: 100%;
+    animation: bar 0.5s forwards;
+}
+
+
+@keyframes bar {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+.btn-contato {
+    padding: 5px 18px;
+    border-radius: 20px 0px;
+    background-color: rgb(114, 0, 0);
+    color: #fc9d26;
+    font-size: 1.3rem;
+    font-weight: 600; 
+    border: none;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    font-family: 'tanker';
+}
+
+.header-subscription {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-size: 1.3rem;
+}
+
+.header-tittle {
+    text-align: center;
+    font-size: 2.2rem;
+    letter-spacing: 3px;
+}
+
+@keyframes slogan {
+    from {
+
+    }
+
+    to {
+
+    }
+}
+
+.burguer-swiper  {
+  width: 100%;
+  max-width: 1200px; /* largura máxima */
+  height: 500px;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-top: -100px;
+}
+
+.burguer-swiper .swiper-wrapper {
+    align-items: center;
+}
+
+.burguer-swiper.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.burguer-swiper .swiper-slide img {
+  width: 100%;
+  max-width: 350px;
+  object-fit: contain;
+  transition: transform 0.8s ease;
+  border-radius: 12px; /* opcional, deixa arredondado */
+}
+
+
+/* zoom na imagem central */
+.burguer-swiper .swiper-slide-active img {
+  transform: scale(1.4);
+}
+
+

@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'tanker';
+}
+
+@font-face {
+    font-family: 'tanker';
+    src: url(../font/Tanker-Regular.otf);
+}
+
+.interface {
+    padding: 0 6%;
+    margin: 0 auto;
+    max-width: 1280px;
+}
