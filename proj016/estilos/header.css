@@ -5,6 +5,7 @@ header {
 header .logo {
     color: #fc9d26;
     -webkit-text-stroke: 2px orangered;
+    letter-spacing: 3px;
 }
 
 .wave {
@@ -130,7 +131,8 @@ nav .menu li a:hover::after {
   height: 500px;
   margin: 0 auto;
   overflow: hidden;
-  margin-top: -100px;
+  margin-top: -50px;
+  
 }
 
 .burguer-swiper .swiper-wrapper {

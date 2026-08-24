@@ -1,4 +1,5 @@
 const swiper = new Swiper(".burguer-swiper", {
+  
   loop: true,
 
   slidesPerView: 3,
@@ -18,7 +19,7 @@ const swiper = new Swiper(".burguer-swiper", {
 const slideinfinite = new Swiper(".infinite-swiper", {
   
 
-  slidesPerView: 4,
+  slidesPerView: 'auto',
 
   centeredSlides: true,
 
