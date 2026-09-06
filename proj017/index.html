@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+        integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- font awesome -->
+
+    <!-- font google -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+    </style>
+    <!-- font google -->
+
+    <!-- link css -->
+    <link rel="stylesheet" href="estilos/style.css">
+    <!-- link css -->
+
+    <title>Studio Aurora</title>
+</head>
+
+<body>
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <span>A</span>
+                <h1>Studio<br>Aurora</h1>
+            </div>
+
+            <nav>
+                <ul class="menu">
+                    <a href="#">Início</a>
+                    <a href="#portfolio">Portifólio</a>
+                    <a href="#sobre">Sobre</a>
+                    <a href="#orçamento">Orçamento</a>
+                </ul>
+            </nav>
+
+            <div class="menu-right">
+                <div class="menu-favorite">
+                    <i class="fa-regular fa-heart"></i> Favoritos (3)
+                </div>
+
+                <div class="menu-icons">
+                    <div class="menu-toggle">
+                        <i class="fa-solid fa-sun"></i>
+                    </div>
+
+                    <div class="menu-btn">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="hero-container">
+        <div class="interface">
+            <div class="hero-left">
+                <span class="title-span">
+                    <i class="fa-solid fa-circle-dot"></i>
+                    <h2>STUDIO AURORA</h2>
+                </span>
+
+                <div class="hero-title">
+                    <h1>Fotografia que transforma momentos em histórias.</h1>
+                </div>
+
+                <div class="hero-subtitle">
+                    <p>Somos um estúdio de fotografia e audiovisual especializado em capturar o que realmente
+                        importa: pessoas, emoções e histórias únicas.</p>
+                </div>
+
+                <button class="button hero-btn">
+                    <p>Ver portifólio</p>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+                <div class="hero-bottom">
+                    <i class="fa-regular fa-clipboard"></i>
+                    <p>+120 projetos realizados</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="project-container">
+        <div class="interface">
+            <span class="title-span">
+                <i class="fa-solid fa-circle-dot"></i>
+                <h2>PORTFÓLIO</h2>
+            </span>
+
+            <div class="project-top">
+                <h2>Nossos Projetos</h2>
+
+                <div class="project-search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="search" placeholder="Pesquisar projeto...">
+                </div>
+            </div>
+
+            <div class="project-filter">
+                <div class="project-buttons">
+                    <button class="button-filter">Todos</button>
+                    <button class="button-filter">Casamentos</button>
+                    <button class="button-filter">Publicidade</button>
+                    <button class="button-filter">Retratos</button>
+                    <button class="button-filter">Eventos</button>
+                </div>
+
+                <div class="project-favorite">
+                    <p>Favorites</p>
+
+                    <select name="categoria" id="categoria">
+                        <option value="">❤️</option>
+                        <option value="">⭐</option>
+                    </select>
+                </div>
+            </div>
+                <section class="project-box">
+                    <article class="project-card">
+                        <!-- Cards JS -->
+                    </article>
+                </section>
+        </div>
+    </section>
+
+    <section id="about-container">
+        <div class="about-left">
+            <img src="imagens/section-img.jpg" alt="">
+        </div>
+
+        <div class="about-right">
+            <span class="title-span">
+                <i class="fa-solid fa-circle-dot"></i>
+                <h2>SOBRE NÓS</h2>
+            </span>
+
+            <div class="about-title">
+                <h2>Mais que fotos, <br> criamos memórias.</h2>
+            </div>
+
+            <div class="about-subtitle">
+                <p>O Studio Aurora nasceu da paixão por contar hisórias através da imagens. Trabalhamos dcom fotografia
+                    o vídeo para transformar momentos especiais em lembranças que duram pra sempre.</p>
+            </div>
+
+            <button class="button about-btn">
+                <p>Saiba mais</p>
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+    </section>
+
+    <section id="quote-container">
+        <div class="interface">
+            <div class="quote-left">
+                <span class="title-span">
+                    <i class="fa-solid fa-circle-dot"></i>
+                    <h2>SOBRE NÓS</h2>
+                </span>
+
+                <div class="about-title">
+                    <h2>Mais que fotos, <br> criamos memórias.</h2>
+                </div>
+
+                <div class="about-subtitle">
+                    <p>O Studio Aurora nasceu da paixão por contar hisórias através da imagens. Trabalhamos com
+                        fotografia o vídeo para transformar momentos especiais em lembranças que duram pra sempre.</p>
+                </div>
+
+                <div class="about-icons">
+                    <div class="icon-description">
+                        <i class="fa-solid fa-parachute-box"></i>
+                        <p>Atendimento Personalizado</p>
+                    </div>
+
+                    <div class="icon-description">
+                        <i class="fa-solid fa-headset"></i>
+                        <p>Resposta em até 24h</p>
+                    </div>
+
+                    <div class="icon-description">
+                        <i class="fa-regular fa-envelope"></i>
+                        <p>Suporte via e-mail</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quote-right">
+                <form action="">
+                    <div class="form-name">
+                        <label for="name">Name *</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+
+                    <div class="form-service">
+                        <label for="name">Tipo de serviço *</label>
+                        <select name="servico" id="servico">
+                            <option value="">Seleciona um Serviço</option>
+                            <option value="instalação">Instalação</option>
+                            <option value="projeto">Projeto Personalizado</option>
+                            <option value="consultoria">Consultoria</option>
+                            <option value="reparo">Reparo</option>
+                            <option value="suporte">Suporte Técnico</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
