@@ -34,13 +34,13 @@ header .interface {
 
 header .interface .logo {
     display: flex;
-    align-items: center;
-    line-height: 30px;
+    align-items: end;
+    line-height: 25px;
 }
 
 header .interface .logo span {
     font-family: 'going', sans-serif;
-    font-size: 4rem;
+    font-size: 5rem;
 }
 
 nav .menu {
@@ -56,6 +56,7 @@ nav .menu a {
 
 .menu-right {
     display: flex;
+    align-items: center;
     gap: 20px;
 }
 
@@ -151,19 +152,118 @@ nav .menu a {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 20px;
 }
 
-.project-search {
+.project-top h2 {
+    font-size: 3rem;
+}
+
+.project-top .project-search {
    display: flex;
    align-items: center;
    gap: 5px;
+   width: 300px;
 }
 
-.project-filter {
+.project-top .project-search input {
+    width: 100%;
+    font-size: 1.3rem;
+    padding: 0.2rem;
+}
+
+
+.project-top .project-search i {
+    font-size: 1.3rem;
+}
+
+.project-buttons {
     display: flex;
+    justify-content: left;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.project-buttons button {
+    font-size: 1.3rem;
+    padding: 0.2rem 1.5rem;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+
+}
+
+.project-buttons button:hover {
+    background-color: black;
+    color: white;
+    
 }
 
 .project-filter .project-favorite {
     display: flex;
+    align-items: center;
     gap: 10px;
+}
+
+.project-filter .project-favorite select {
+    border: none;
+    outline: none;
+}
+
+.project-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.project-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-heart {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.card-bottom {
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 80%, transparent);
+}
+
+.card-bottom .card-name {
+    font-size: 1.3rem;
+}
+
+.card-bottom .card-category {
+    font-size: 1.1rem;
+    color: cadetblue;
+}
+
+.project-more {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+}
+
+.project-more .more {
+    font-size: 1.4rem;
+    padding: 0rem 2rem;
 }
