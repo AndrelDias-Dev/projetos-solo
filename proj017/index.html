@@ -18,6 +18,7 @@
 
     <!-- link css -->
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/mediaquerie.css">
     <!-- link css -->
 
     <title>Studio Aurora</title>
@@ -241,29 +242,27 @@
     </section>
 
     <section id="about-container">
-        <div class="about-left">
-            <img src="imagens/section-img.jpg" alt="">
-        </div>
-
-        <div class="about-right">
-            <span class="title-span">
-                <i class="fa-solid fa-circle-dot"></i>
-                <h2>SOBRE NÓS</h2>
-            </span>
-
-            <div class="about-title">
-                <h2>Mais que fotos, <br> criamos memórias.</h2>
+        <div class="interface">
+            <div class="about-left">
+                <img src="imagens/section-img.jpg" alt="">
             </div>
-
-            <div class="about-subtitle">
-                <p>O Studio Aurora nasceu da paixão por contar hisórias através da imagens. Trabalhamos dcom fotografia
-                    o vídeo para transformar momentos especiais em lembranças que duram pra sempre.</p>
+            <div class="about-right">
+                <span class="title-span">
+                    <i class="fa-solid fa-circle-dot"></i>
+                    <h2>SOBRE NÓS</h2>
+                </span>
+                <div class="about-title">
+                    <h2>Mais que fotos, <br> criamos memórias.</h2>
+                </div>
+                <div class="about-subtitle">
+                    <p>O Studio Aurora nasceu da paixão por contar hisórias através da imagens. Trabalhamos dcom fotografia
+                        o vídeo para transformar momentos especiais em lembranças que duram pra sempre.</p>
+                </div>
+                <button class="button about-btn">
+                    <p>Saiba mais</p>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
             </div>
-
-            <button class="button about-btn">
-                <p>Saiba mais</p>
-                <i class="fa-solid fa-arrow-right"></i>
-            </button>
         </div>
     </section>
 
@@ -272,19 +271,19 @@
             <div class="quote-left">
                 <span class="title-span">
                     <i class="fa-solid fa-circle-dot"></i>
-                    <h2>SOBRE NÓS</h2>
+                    <h2>ORÇAMENTO</h2>
                 </span>
 
-                <div class="about-title">
-                    <h2>Mais que fotos, <br> criamos memórias.</h2>
+                <div class="quote-title">
+                    <h2>Solicite seu orçamento</h2>
                 </div>
 
-                <div class="about-subtitle">
-                    <p>O Studio Aurora nasceu da paixão por contar hisórias através da imagens. Trabalhamos com
-                        fotografia o vídeo para transformar momentos especiais em lembranças que duram pra sempre.</p>
+                <div class="quote-subtitle">
+                    <p>Preencha o formulário e nos conte sobre o seu projeto. <br> Vamos adorar fazer parte da sua
+                        história!</p>
                 </div>
 
-                <div class="about-icons">
+                <div class="quote-icons">
                     <div class="icon-description">
                         <i class="fa-solid fa-parachute-box"></i>
                         <p>Atendimento Personalizado</p>
@@ -301,29 +300,101 @@
                     </div>
                 </div>
             </div>
-
+            <hr>
             <div class="quote-right">
                 <form action="">
-                    <div class="form-name">
-                        <label for="name">Name *</label>
-                        <input type="text" name="name" id="name">
+                    <div class="form-top">
+                        <div class="form-name">
+                            <label for="name">Name *</label>
+                            <input placeholder="Digite seu Nome..." type="text" name="name" id="name">
+                        </div>
+
+                        <div class="form-email">
+                            <label for="email">Email *</label>
+                            <input placeholder="Digite seu E-mail..." type="email" name="mail" id="email">
+                        </div>
                     </div>
 
-                    <div class="form-service">
-                        <label for="name">Tipo de serviço *</label>
-                        <select name="servico" id="servico">
-                            <option value="">Seleciona um Serviço</option>
-                            <option value="instalação">Instalação</option>
-                            <option value="projeto">Projeto Personalizado</option>
-                            <option value="consultoria">Consultoria</option>
-                            <option value="reparo">Reparo</option>
-                            <option value="suporte">Suporte Técnico</option>
-                        </select>
+                    <div class="form-middle">
+                        <div class="form-service">
+                            <label for="name">Tipo de serviço *</label>
+                            <select name="servico" id="servico">
+                                <option value="">Seleciona um Serviço</option>
+                                <option value="instalação">Instalação</option>
+                                <option value="projeto">Projeto Personalizado</option>
+                                <option value="consultoria">Consultoria</option>
+                                <option value="reparo">Reparo</option>
+                                <option value="suporte">Suporte Técnico</option>
+                            </select>
+                        </div>
+
+                        <div class="form-date">
+                            <label for="date">Data</label>
+                            <input type="date" name="date" id="date">
+                        </div>
+                    </div>
+
+                    <div class="form-bottom">
+                        <div class="form-message">
+                            <label for="message">Mensagem</label>
+                            <textarea placeholder="Conte mais sobre seu projeto..." name="message" id="message">
+
+                            </textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-button">
+                        <button type="submit">
+                            Enviar solicitação
+                        </button>
                     </div>
                 </form>
             </div>
         </div>
     </section>
+
+    <footer>
+        <div class="interface">
+            <div class="footer-top">
+                <div class="logo">
+                    <span>A</span>
+                    <h1>Studio<br>urora</h1>
+                </div>
+
+                <nav>
+                <ul class="menu">
+                    <a href="#">Início</a>
+                    <a href="#portfolio">Portifólio</a>
+                    <a href="#sobre">Sobre</a>
+                    <a href="#orçamento">Orçamento</a>
+                </ul>
+            </nav>
+
+            <div class="atendent">
+                <div class="atendent-top">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <p>Atendimento-disponível</p>
+                </div>
+
+                <div class="atendent-bottom">
+                    <p>Segunda a sexta - 09 : 00 às 18:00</p>
+                </div>
+            </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-copy">
+                    <p>@ 2026 Studio Aurora. Todos os direitos reservados.</p>
+                </div>
+
+                <div class="footer-icons">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <i class="fa-brands fa-square-facebook"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

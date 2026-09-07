@@ -16,7 +16,7 @@
 .interface {
     margin: 0 auto;
     padding: 0 6%;
-    max-width: 1250px;
+    max-width: 1280px;
 }
 
 header {
@@ -24,21 +24,25 @@ header {
     background: transparent;
     position: absolute;
     width: 100%;
+    color: white;
+    z-index: 2;
 }
 
 header .interface {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 
-header .interface .logo {
+header .interface .logo, .footer-top .logo {
     display: flex;
     align-items: end;
     line-height: 25px;
+    
 }
 
-header .interface .logo span {
+header .interface .logo span, .footer-top .logo span {
     font-family: 'going', sans-serif;
     font-size: 5rem;
 }
@@ -50,7 +54,7 @@ nav .menu {
 
 nav .menu a {
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 1.3rem;
 }
 
@@ -64,6 +68,7 @@ nav .menu a {
     display: flex;
     gap: 10px;
     font-size: 1.2rem;
+    
 }
 
 /* HERO */
@@ -74,7 +79,16 @@ nav .menu a {
     background-size: cover;
     background-position: center;
     height: 80vh;
+    position: relative;
     
+}
+
+#hero-container::before {
+    content: '';
+    position: absolute;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), transparent);
+    height: 100%;
+    inset: 0;
 }
 
 #hero-container .interface {
@@ -87,10 +101,11 @@ nav .menu a {
 }
 
 #hero-container .interface .hero-left {
-    max-width: 500px;
+    max-width: 800px;
     display: flex;
     flex-direction: column;
     gap: 10px;
+    z-index: 2;
 }
 
 .title-span {
@@ -99,12 +114,14 @@ nav .menu a {
     gap: 10px;
     font-size: 0.7rem;
     color: #EFC891;
+    margin-bottom: -10px;
 }
 
 .hero-left .hero-title {
-    font-size: 1.6rem;
+    font-size: 2.5rem;
     color: white;
     text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+    line-height: 90px;
 }
 
 .hero-left .hero-subtitle {
@@ -267,3 +284,196 @@ nav .menu a {
     font-size: 1.4rem;
     padding: 0rem 2rem;
 }
+
+/* SOBRE NÓS */
+
+#about-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    background-color: black;
+    color: white;
+    padding: 80px;
+}
+
+#about-container .interface {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.about-left img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.about-left {
+    flex: 1;
+}
+
+.about-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.about-right .about-title {
+    font-size: 2rem;
+    line-height: 60px;
+}
+
+.about-right .about-subtitle {
+    font-size: 1.2rem;
+    max-width: 600px;
+}
+
+/* ORÇAMENTO */
+
+#quote-container {
+    margin: 40px 0px;
+}
+
+#quote-container .interface {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.quote-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 2;
+}
+
+.quote-left .quote-title {
+    font-size: 1.4rem;
+}
+
+.quote-right form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+    flex: 1;
+    font-size: 1.3rem;
+}
+
+.form-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+
+.form-top input, .form-middle input {
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 0px 4px;
+}
+
+.form-name input {
+    width: 100%;
+}
+
+.form-bottom .form-message {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.form-bottom .form-message textarea {
+    font-size: 1.1rem;
+    padding: 0px 5px;
+    max-height: 300px;
+}
+
+.form-service {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-service select {
+  width: 100%;
+  font-size: 1.1rem;
+}
+
+.form-button button {
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 1.2rem;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    margin-top: 20px;
+}
+
+.quote-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.icon-description {
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+
+.icon-description i {
+    font-size: 1.7rem;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px 0px;
+}
+
+footer .interface {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.atendent {
+    font-size: 1.2rem;
+}
+
+.atendent-top {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.atendent-top i {
+    color: greenyellow;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-icons {
+    display: flex;
+    gap: 5px;
+}
+
+.footer-icons i {
+    font-size: 1.5rem;
+}
+

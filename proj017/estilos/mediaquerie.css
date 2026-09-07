@@ -1,0 +1,104 @@
+@media screen and (max-width: 1070px) {
+/* header nav */
+nav .menu {
+    display: none;
+    gap: 20px;
+
+}
+
+/* sobre */
+
+#about-container .interface {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 40px;
+}
+
+.about-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+}
+
+/* orçamento */
+
+#quote-container {
+    margin: 40px 0px;
+}
+
+#quote-container .interface {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.quote-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+    width: 100%;
+}
+
+.quote-right form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+    flex: 1;
+    font-size: 1.3rem;
+}
+
+.form-top, .form-middle {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+
+.form-top input, .form-middle input {
+    width: 100%;
+    font-size: 1.1rem;
+}
+
+.form-name input {
+    width: 100%;
+}
+
+.form-bottom .form-message {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.form-bottom .form-message textarea {
+    font-size: 1.1rem;
+    padding: 0px 5px;
+    max-height: 300px;
+}
+
+.form-service {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-service select {
+  width: 100%;
+  font-size: 1.1rem;
+}
+
+
+.quote-icons {
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+    width: 100%;
+}
+
+}
