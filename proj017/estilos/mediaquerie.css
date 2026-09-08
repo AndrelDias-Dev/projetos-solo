@@ -8,6 +8,15 @@ nav .menu {
 
 /* sobre */
 
+#about-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    background-color: black;
+    color: white;
+    padding: 20px 0px;
+}
+
 #about-container .interface {
     display: flex;
     align-items: center;
@@ -24,11 +33,11 @@ nav .menu {
     width: 100%;
 }
 
-/* orçamento */
-
-#quote-container {
-    margin: 40px 0px;
 }
+
+
+@media screen and (max-width: 900px) {
+/* orçamento */
 
 #quote-container .interface {
     display: flex;
@@ -54,51 +63,30 @@ nav .menu {
     font-size: 1.3rem;
 }
 
-.form-top, .form-middle {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    margin-bottom: 10px;
-    gap: 10px;
-}
-
-.form-top input, .form-middle input {
-    width: 100%;
-    font-size: 1.1rem;
-}
-
 .form-name input {
     width: 100%;
 }
 
-.form-bottom .form-message {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
+.form-name, .form-email {
+    width: 100%;
 }
-
-.form-bottom .form-message textarea {
-    font-size: 1.1rem;
-    padding: 0px 5px;
-    max-height: 300px;
-}
-
-.form-service {
-    display: flex;
-    flex-direction: column;
-}
-
-.form-service select {
-  width: 100%;
-  font-size: 1.1rem;
-}
-
 
 .quote-icons {
     display: flex;
-    justify-content: left;
-    gap: 10px;
-    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    font-size: 1rem;
+}
+
+.icon-description {
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+
+.icon-description i {
+    font-size: 2rem;
 }
 
 }

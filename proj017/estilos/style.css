@@ -347,11 +347,19 @@ nav .menu a {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    flex: 2;
+    flex: 1;
 }
 
 .quote-left .quote-title {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
+}
+
+.quote-left .quote-subtitle {
+    font-size: 1.2rem;
+}
+
+.quote-right {
+    flex: 1;
 }
 
 .quote-right form {
@@ -368,7 +376,7 @@ nav .menu a {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 10px;
-    gap: 10px;
+    gap: 20px;
 }
 
 .form-top input, .form-middle input {
@@ -377,7 +385,7 @@ nav .menu a {
     padding: 0px 4px;
 }
 
-.form-name input {
+.form-name , .form-email {
     width: 100%;
 }
 
@@ -390,7 +398,8 @@ nav .menu a {
 .form-bottom .form-message textarea {
     font-size: 1.1rem;
     padding: 0px 5px;
-    max-height: 300px;
+    height: 150px;
+    max-height: 400px;
 }
 
 .form-service {
@@ -416,17 +425,22 @@ nav .menu a {
 
 .quote-icons {
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     gap: 10px;
+    font-size: 1.4rem;
 }
 
 .icon-description {
     display: flex;
     align-items: center;
-    gap:20px;
+    gap:10px;
 }
 
 .icon-description i {
-    font-size: 1.7rem;
+    font-size: 2rem;
+    position: relative;
+    top: 2px;
 }
 
 /* FOOTER */
