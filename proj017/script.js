@@ -30,7 +30,7 @@ const fotografias = [
         id: 4,
         img: 'imagens/project-img4.jpg',
         favorite: false,
-        nome: 'Retratos Urbanos',
+        nome: 'Retratos Casamentos',
         category: 'Retrato' + '-' + '2023',
     },
 
@@ -74,6 +74,23 @@ const fotografias = [
         category: 'Retrato' + '-' + '2023',
     },
 ]
+
+// SEARCH
+
+const searchInput = document.querySelector('#search')
+
+searchInput.addEventListener('input', (event) => {
+    
+    const search = event.target.value.toLowerCase();
+
+    const resultado = fotografias.filter((foto) => {
+        return foto.nome.toLowerCase().includes(search.toLowerCase());
+    });
+
+    renderProducts(resultado)
+})
+
+const casamentos = fotografias
 
 // PROJECT RENDER 
 
